@@ -12,7 +12,7 @@ struct RecipeRow: View {
     
     var body: some View {
         HStack {
-            
+            //need to figure out how to get items listed horizontally rather than stacked veritcally
             VStack{
                 recipe.image
                     .resizable()
@@ -27,8 +27,7 @@ struct RecipeRow: View {
                 Text(recipe.time)
                     .font(.custom("Futura-Regular", size: 15))
                     .multilineTextAlignment(.leading)
-                
-                
+                    .foregroundColor(Color(red: 0.474, green: 0.498, blue: 0.623))
             }
             
             

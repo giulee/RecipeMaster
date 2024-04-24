@@ -13,9 +13,19 @@ struct HomeView: View {
     
     var body: some View {  NavigationSplitView {
         
+        //need to figure out how to left align text
+        //figure out how to add a navigation bar at the bottom of the screen
         Text("Explore")
             .multilineTextAlignment(.leading)
             .font(.custom("Futura-Bold", size: 40))
+            .padding(.bottom)
+        
+        Text("Popular Recipes")
+            .multilineTextAlignment(.leading)
+            .font(.custom("Futura-Bold", size: 20))
+            .foregroundColor(Color(red: 0.333, green: 0.780, blue: 0.509))
+            
+           
            
         List(recipes) { recipe in
             NavigationLink {

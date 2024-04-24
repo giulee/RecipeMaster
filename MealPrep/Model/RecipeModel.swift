@@ -12,9 +12,11 @@ import CoreLocation
 struct Recipe: Hashable, Codable, Identifiable {
     var id: Int
     var name: String
-    var description: String
+    var equipment: String
     var time: String
     var serving: String
+    var ingredients: String
+    var instructions: String
 
     private var imageName: String
     var image: Image {

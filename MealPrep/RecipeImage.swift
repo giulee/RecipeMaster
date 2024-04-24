@@ -12,10 +12,6 @@ struct RecipeImage: View {
 
     var body: some View {
         image
-            //.clipShape(Rectangle())
-            //  .overlay {
-              // Rectangle().stroke(.white, lineWidth: 4)
-          //  }
             .shadow(radius: 7)
             .cornerRadius(15)
     }

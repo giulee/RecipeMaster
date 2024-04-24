@@ -14,8 +14,8 @@ struct RecipeDetail: View {
         ScrollView {
            
             RecipeImage(image: recipe.image)
-                .offset(y: -70)
-                .padding(.bottom, -80)
+                .offset(y: -90)
+                .padding(.bottom, -90)
                
 
             VStack(alignment: .leading) {
@@ -30,20 +30,37 @@ struct RecipeDetail: View {
                     Text(recipe.serving)
                         .padding(.horizontal)
                 }
-                .font(.subheadline)
+                .font(.custom("Futura-Regular", size: 15))
                 .foregroundStyle(.secondary)
 
-                Divider()
-
+            
+                
+                //need to figure out how to achieve list format for ingredients and equipment
+                Text("Equipment")
+                    .font(.custom("Futura-Bold", size: 20))
+                    .padding()
+                Text(recipe.equipment)
+                    .padding(.horizontal)
+                    .font(.custom("Futura-Regular", size: 18))
+                
+                
                 Text("Ingredients")
                     .font(.custom("Futura-Bold", size: 20))
                     .padding()
-
-                Text(recipe.description)
+                Text(recipe.ingredients)
                     .padding(.horizontal)
-                    .font(.custom("Futura-Regular", size: 15))
+                    .font(.custom("Futura-Regular", size: 18))
+                
+                
+                
+                Text("Instructions")
+                    .font(.custom("Futura-Bold", size: 20))
+                    .padding()
+                Text(recipe.instructions)
+                    .padding(.horizontal)
+                    .font(.custom("Futura-Regular", size: 18))
             }
-            .padding()
+            .padding(.horizontal, 25.0)
         }
       
         //.navigationBarTitleDisplayMode(.inline)
