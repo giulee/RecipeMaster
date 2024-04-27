@@ -27,7 +27,7 @@ struct RecipeDetail: View {
                     Text(recipe.time)
                         .padding(.horizontal)
                     Spacer()
-                    Text(recipe.serving)
+                    Text("Serves \(recipe.serving)")
                         .padding(.horizontal)
                 }
                 .font(.custom("Futura-Regular", size: 15))
@@ -39,6 +39,7 @@ struct RecipeDetail: View {
                 Text("Equipment")
                     .font(.custom("Futura-Bold", size: 20))
                     .padding()
+                    .foregroundColor(Color(red: 0.333, green: 0.780, blue: 0.509))
                 Text(recipe.equipment)
                     .padding(.horizontal)
                     .font(.custom("Futura-Regular", size: 18))
@@ -47,6 +48,7 @@ struct RecipeDetail: View {
                 Text("Ingredients")
                     .font(.custom("Futura-Bold", size: 20))
                     .padding()
+                    .foregroundColor(Color(red: 0.333, green: 0.780, blue: 0.509))
                 Text(recipe.ingredients)
                     .padding(.horizontal)
                     .font(.custom("Futura-Regular", size: 18))
@@ -56,9 +58,11 @@ struct RecipeDetail: View {
                 Text("Instructions")
                     .font(.custom("Futura-Bold", size: 20))
                     .padding()
+                    .foregroundColor(Color(red: 0.333, green: 0.780, blue: 0.509))
                 Text(recipe.instructions)
-                    .padding(.horizontal)
                     .font(.custom("Futura-Regular", size: 18))
+                    .padding(.horizontal)
+                    
             }
             .padding(.horizontal, 25.0)
         }

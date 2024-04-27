@@ -38,6 +38,85 @@
         "ingredients": "TBA",
         "instructions": "TBA",
         "imageName": "pizza"
+    },
+    {
+        "name": "Simple Noodles",
+        "time": "15mins",
+        "serving": "2 people",
+        "category": "TBA",
+        "id": 1004,
+        "isFeatured": false,
+        "isFavorite": true,
+        "equipment": "TBA",
+        "ingredients": "TBA",
+        "instructions": "TBA",
+        "imageName": "noodles"
+    },
+    {
+        "name": "Prawn Salad",
+        "time": "20mins",
+        "serving": "4 people",
+        "category": "TBA",
+        "id": 1005,
+        "isFeatured": false,
+        "isFavorite": true,
+        "equipment": "TBA",
+        "ingredients": "TBA",
+        "instructions": "TBA",
+        "imageName": "prawnSalad"
+    },
+    {
+        "name": "Pumpkin Soup",
+        "time": "20mins",
+        "serving": "4 people",
+        "category": "TBA",
+        "id": 1006,
+        "isFeatured": false,
+        "isFavorite": true,
+        "equipment": "TBA",
+        "ingredients": "TBA",
+        "instructions": "TBA",
+        "imageName": "pumpkinSoup"
+    },
+    {
+        "name": "Salmon",
+        "time": "20mins",
+        "serving": "4 people",
+        "category": "TBA",
+        "id": 1007,
+        "isFeatured": false,
+        "isFavorite": true,
+        "equipment": "TBA",
+        "ingredients": "TBA",
+        "instructions": "TBA",
+        "imageName": "salmon"
+    },
+    {
+        "name": "Chick Salad",
+        "time": "20mins",
+        "serving": "4 people",
+        "category": "TBA",
+        "id": 1008,
+        "isFeatured": false,
+        "isFavorite": true,
+        "equipment": "TBA",
+        "ingredients": "TBA",
+        "instructions": "TBA",
+        "imageName": "chickenSalad"
+    },
+    
+    {
+        "name": "Enoki Mushroom Tomato Pasta",
+        "time": "20mins",
+        "serving": "4 people",
+        "category": "TBA",
+        "id": 1009,
+        "isFeatured": false,
+        "isFavorite": true,
+        "equipment": "TBA",
+        "ingredients": "TBA",
+        "instructions": "TBA,",
+        "imageName": "mushroomPasta"
     }
 ]
 
