@@ -14,20 +14,21 @@
         "imageName": "pasta"
     },
     {
-        "name": "Green Salad",
-        "time": "15mins",
-        "serving": "2 people",
-        "category": "vegetarian",
+        "name": "Salmon",
+        "time": "20mins",
+        "serving": "4 people",
+        "category": "TBA",
         "id": 1002,
         "isFeatured": false,
-        "isFavorite": false,
+        "isFavorite": true,
         "equipment": "TBA",
         "ingredients": "TBA",
         "instructions": "TBA",
-        "imageName": "greenSalad"
+        "imageName": "salmon"
     },
+    
     {
-        "name": "Pizza",
+        "name": "Classic Quiche",
         "time": "20mins",
         "serving": "4 people",
         "category": "TBA",
@@ -37,12 +38,13 @@
         "equipment": "TBA",
         "ingredients": "TBA",
         "instructions": "TBA",
-        "imageName": "pizza"
+        "imageName": "quiche"
     },
+    
     {
-        "name": "Simple Noodles",
-        "time": "15mins",
-        "serving": "2 people",
+        "name": "Fried Rice",
+        "time": "20mins",
+        "serving": "4 people",
         "category": "TBA",
         "id": 1004,
         "isFeatured": false,
@@ -50,8 +52,9 @@
         "equipment": "TBA",
         "ingredients": "TBA",
         "instructions": "TBA",
-        "imageName": "noodles"
+        "imageName": "friedRice"
     },
+    
     {
         "name": "Prawn Salad",
         "time": "20mins",
@@ -78,8 +81,10 @@
         "instructions": "TBA",
         "imageName": "pumpkinSoup"
     },
+    
+    
     {
-        "name": "Salmon",
+        "name": "Enoki Mushroom Tomato Pasta",
         "time": "20mins",
         "serving": "4 people",
         "category": "TBA",
@@ -88,11 +93,11 @@
         "isFavorite": true,
         "equipment": "TBA",
         "ingredients": "TBA",
-        "instructions": "TBA",
-        "imageName": "salmon"
+        "instructions": "TBA,",
+        "imageName": "mushroomPasta"
     },
     {
-        "name": "Chick Salad",
+        "name": "Salmon Curry",
         "time": "20mins",
         "serving": "4 people",
         "category": "TBA",
@@ -101,22 +106,64 @@
         "isFavorite": true,
         "equipment": "TBA",
         "ingredients": "TBA",
-        "instructions": "TBA",
-        "imageName": "chickenSalad"
+        "instructions": "TBA,",
+        "imageName": "fishCurry"
     },
     
     {
-        "name": "Enoki Mushroom Tomato Pasta",
+        "name": "Green Salad",
+        "time": "15mins",
+        "serving": "2 people",
+        "category": "vegetarian",
+        "id": 1009,
+        "isFeatured": false,
+        "isFavorite": false,
+        "equipment": "TBA",
+        "ingredients": "TBA",
+        "instructions": "TBA",
+        "imageName": "greenSalad"
+    },
+    
+    {
+        "name": "Pizza",
         "time": "20mins",
         "serving": "4 people",
         "category": "TBA",
-        "id": 1009,
+        "id": 1010,
         "isFeatured": false,
         "isFavorite": true,
         "equipment": "TBA",
         "ingredients": "TBA",
-        "instructions": "TBA,",
-        "imageName": "mushroomPasta"
-    }
+        "instructions": "TBA",
+        "imageName": "pizza"
+    },
+    {
+        "name": "Simple Noodles",
+        "time": "15mins",
+        "serving": "2 people",
+        "category": "TBA",
+        "id": 1011,
+        "isFeatured": false,
+        "isFavorite": true,
+        "equipment": "TBA",
+        "ingredients": "TBA",
+        "instructions": "TBA",
+        "imageName": "noodles"
+    },
+    
+    {
+        "name": "Chicken Salad",
+        "time": "20mins",
+        "serving": "4 people",
+        "category": "TBA",
+        "id": 1012,
+        "isFeatured": false,
+        "isFavorite": true,
+        "equipment": "TBA",
+        "ingredients": "TBA",
+        "instructions": "TBA",
+        "imageName": "chickenSalad"
+    },
+    
 ]
 
