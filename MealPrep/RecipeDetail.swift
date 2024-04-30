@@ -14,7 +14,7 @@ struct RecipeDetail: View {
         ScrollView {
            
             RecipeImage(image: recipe.image)
-                .offset(y: -90)
+                .offset(y: -100)
                 .padding(.bottom, -90)
                
 

@@ -12,33 +12,47 @@ struct SavedRecipesView: View {
     var username: String
     
     var body: some View {
-        NavigationSplitView {
-            
-            //figure out how to add a navigation bar at the bottom of the screen
-            //figure out how to get rid of border
-            VStack{
-                Text("Saved Recipes")
-                    .multilineTextAlignment(.leading)
-                    .font(.custom("Futura-Bold", size: 40))
-                    .padding(.bottom)
-                
-                List(recipes) { recipe in
-                    NavigationLink {
-                        RecipeDetail(recipe: recipe).navigationBarBackButtonHidden(true)
-                    } label: {
-                        SavedRecipeRow(recipe: recipe)
-                    }
+        NavigationView {
+            ScrollView {
+                VStack(spacing: 20) {
+                    Text("Saved Recipes")
+                        .font(.custom("Futura-Bold", size: 40))
+                        .padding(.bottom)
+                    
+                   
+                    SavedSection(recipes: recipes.prefix(2))
+                    
+                    SavedSection( recipes:recipes.prefix(8).dropFirst(4))
+                    
+                    SavedSection(recipes:recipes.prefix(12).dropFirst(8))
                 }
-                
+                .padding(.horizontal)
             }
-            
+            .navigationBarTitle("", displayMode: .inline)
+            .navigationBarHidden(true)
         }
-    detail: {
-        Text("Select a Recipe")
-    }
     }
 }
 
+struct SavedSection: View {
+   
+    var recipes: ArraySlice<Recipe>
+    
+    var body: some View {
+        
+        VStack{
+            
+            HStack( spacing: 10) {
+                ForEach(recipes, id: \.id) { recipe in
+                    NavigationLink(destination: RecipeDetail(recipe: recipe)) {
+                        RecipeRow(recipe: recipe)
+                            .foregroundColor(.black)
+                    }
+                }
+            }
+        }
+    }
+}
 #Preview {
     SavedRecipesView(username: "")
     
