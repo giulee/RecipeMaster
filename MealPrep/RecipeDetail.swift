@@ -34,8 +34,6 @@ struct RecipeDetail: View {
                 .foregroundStyle(.secondary)
 
             
-                
-                //need to figure out how to achieve list format for ingredients and equipment
                 Text("Equipment")
                     .font(.custom("Futura-Bold", size: 20))
                     .padding()
@@ -44,24 +42,28 @@ struct RecipeDetail: View {
                     .padding(.horizontal)
                     .font(.custom("Futura-Regular", size: 18))
                 
-                
                 Text("Ingredients")
-                    .font(.custom("Futura-Bold", size: 20))
-                    .padding()
-                    .foregroundColor(Color(red: 0.333, green: 0.780, blue: 0.509))
-                Text(recipe.ingredients)
-                    .padding(.horizontal)
-                    .font(.custom("Futura-Regular", size: 18))
-                
+                        .font(.custom("Futura-Bold", size: 20))
+                        .padding()
+                        .foregroundColor(Color(red: 0.333, green: 0.780, blue: 0.509))
+    
+                ForEach(recipe.ingredients.split(separator: ","), id: \.self) { ingredient in
+                        Text("• \(ingredient.trimmingCharacters(in: .whitespacesAndNewlines))")
+                            .padding(.horizontal)
+                            .font(.custom("Futura-Regular", size: 18))
+                }
                 
                 
                 Text("Instructions")
                     .font(.custom("Futura-Bold", size: 20))
                     .padding()
                     .foregroundColor(Color(red: 0.333, green: 0.780, blue: 0.509))
-                Text(recipe.instructions)
-                    .font(.custom("Futura-Regular", size: 18))
-                    .padding(.horizontal)
+                
+                ForEach(recipe.instructions.split(separator: ","), id: \.self) { ingredient in
+                        Text("• \(ingredient.trimmingCharacters(in: .whitespacesAndNewlines))")
+                            .padding(.horizontal)
+                            .font(.custom("Futura-Regular", size: 18))
+                }
                     
             }
             .padding(.horizontal, 25.0)
