@@ -29,7 +29,7 @@ struct RecipeRow: View {
                                 .font(.custom("Futura-Regular", size: 15))
                                 .multilineTextAlignment(.leading)
                                 .foregroundColor(Color(red: 0.474, green: 0.498, blue: 0.623))
-                                .padding(.bottom, 50.0)
+                                .padding(.bottom, 30.0)
                         }
                 
         }
