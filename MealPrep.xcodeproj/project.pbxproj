@@ -25,6 +25,9 @@
 		758F020F2BD8B51C006BB379 /* RecipeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F020E2BD8B51C006BB379 /* RecipeImage.swift */; };
 		758F02172BDF39E8006BB379 /* SavedRecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F02162BDF39E8006BB379 /* SavedRecipesView.swift */; };
 		758F02192BDF3DA7006BB379 /* SavedRecipeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F02182BDF3DA7006BB379 /* SavedRecipeRow.swift */; };
+		758F021C2BE3964B006BB379 /* VeganRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F021B2BE3964B006BB379 /* VeganRecipeView.swift */; };
+		758F021E2BE45D6C006BB379 /* GlutenFreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F021D2BE45D6C006BB379 /* GlutenFreeView.swift */; };
+		758F02202BE45F90006BB379 /* VegetarianView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F021F2BE45F90006BB379 /* VegetarianView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +69,9 @@
 		758F020E2BD8B51C006BB379 /* RecipeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeImage.swift; sourceTree = "<group>"; };
 		758F02162BDF39E8006BB379 /* SavedRecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedRecipesView.swift; sourceTree = "<group>"; };
 		758F02182BDF3DA7006BB379 /* SavedRecipeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedRecipeRow.swift; sourceTree = "<group>"; };
+		758F021B2BE3964B006BB379 /* VeganRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeganRecipeView.swift; sourceTree = "<group>"; };
+		758F021D2BE45D6C006BB379 /* GlutenFreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlutenFreeView.swift; sourceTree = "<group>"; };
+		758F021F2BE45F90006BB379 /* VegetarianView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegetarianView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +178,9 @@
 				758F01FD2BD897B1006BB379 /* SignUpView.swift */,
 				758F01FB2BD89626006BB379 /* HomeView.swift */,
 				758F02162BDF39E8006BB379 /* SavedRecipesView.swift */,
+				758F021B2BE3964B006BB379 /* VeganRecipeView.swift */,
+				758F021D2BE45D6C006BB379 /* GlutenFreeView.swift */,
+				758F021F2BE45F90006BB379 /* VegetarianView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -310,6 +319,7 @@
 				758F02022BD8A382006BB379 /* RecipeModel.swift in Sources */,
 				758F020F2BD8B51C006BB379 /* RecipeImage.swift in Sources */,
 				758F02192BDF3DA7006BB379 /* SavedRecipeRow.swift in Sources */,
+				758F02202BE45F90006BB379 /* VegetarianView.swift in Sources */,
 				758F020D2BD8B4E2006BB379 /* RecipeDetail.swift in Sources */,
 				758F01FA2BD88BD6006BB379 /* LoginView.swift in Sources */,
 				758F020B2BD8B472006BB379 /* RecipeRow.swift in Sources */,
@@ -318,7 +328,9 @@
 				758F01FC2BD89626006BB379 /* HomeView.swift in Sources */,
 				758F01D22BD88BAE006BB379 /* ContentView.swift in Sources */,
 				758F01D02BD88BAE006BB379 /* MealPrepApp.swift in Sources */,
+				758F021E2BE45D6C006BB379 /* GlutenFreeView.swift in Sources */,
 				758F02062BD8B335006BB379 /* ModelData.swift in Sources */,
+				758F021C2BE3964B006BB379 /* VeganRecipeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

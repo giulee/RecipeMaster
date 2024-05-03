@@ -15,7 +15,7 @@ struct SavedRecipesView: View {
         NavigationView {
             ScrollView {
                 VStack(spacing: 20) {
-                    Text("Saved Recipes")
+                    Text("My Recipes")
                         .font(.custom("Futura-Bold", size: 40))
                         .padding(.bottom)
                     
