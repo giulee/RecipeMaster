@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RecipeDetail: View {
-    var recipe: Recipe
+    @State var recipe: Recipe
     
     var body: some View {
         ScrollView {
@@ -19,9 +19,20 @@ struct RecipeDetail: View {
                
 
             VStack(alignment: .leading) {
-                Text(recipe.name)
-                    .font(.custom("Futura-Bold", size: 25))
-                    .padding()
+                HStack{
+                    Text(recipe.name)
+                        .font(.custom("Futura-Bold", size: 25))
+                        .padding()
+                    Spacer()
+                    Button(action:{
+                        recipe.isFavorite.toggle()
+                    }){
+                        Image(recipe.isFavorite ? "heartFilled" : "heart")
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .padding()
+                    }
+                }
 
                 HStack {
                     Text(recipe.time)
@@ -38,9 +49,12 @@ struct RecipeDetail: View {
                     .font(.custom("Futura-Bold", size: 20))
                     .padding()
                     .foregroundColor(Color(red: 0.333, green: 0.780, blue: 0.509))
-                Text(recipe.equipment)
-                    .padding(.horizontal)
-                    .font(.custom("Futura-Regular", size: 18))
+                
+                ForEach(recipe.ingredients.split(separator: ","), id: \.self) { ingredient in
+                        Text("• \(ingredient.trimmingCharacters(in: .whitespacesAndNewlines))")
+                            .padding(.horizontal)
+                            .font(.custom("Futura-Regular", size: 18))
+                }
                 
                 Text("Ingredients")
                         .font(.custom("Futura-Bold", size: 20))
@@ -59,12 +73,14 @@ struct RecipeDetail: View {
                     .padding()
                     .foregroundColor(Color(red: 0.333, green: 0.780, blue: 0.509))
                 
-                ForEach(recipe.instructions.split(separator: ","), id: \.self) { ingredient in
-                        Text("• \(ingredient.trimmingCharacters(in: .whitespacesAndNewlines))")
-                            .padding(.horizontal)
-                            .font(.custom("Futura-Regular", size: 18))
+                ForEach(Array(recipe.instructions.split(separator: ";").enumerated()), id: \.offset) { index, instruction in
+                    Text("\(index + 1). \(instruction.trimmingCharacters(in: .whitespacesAndNewlines))")
+                        .padding(.horizontal)
+                        .padding(3)
+                        .font(.custom("Futura-Regular", size: 18))
                 }
-                    
+
+                
             }
             .padding(.horizontal, 25.0)
         }

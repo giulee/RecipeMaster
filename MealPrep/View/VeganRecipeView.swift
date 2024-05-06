@@ -9,6 +9,7 @@ import SwiftUI
 
 struct VeganRecipeView: View {
     var username: String
+    
     var body: some View {
         NavigationView {
             ScrollView {
@@ -95,7 +96,6 @@ struct FilteredSection: View {
                     }
                 }
             }
-        
     }
 }
 
