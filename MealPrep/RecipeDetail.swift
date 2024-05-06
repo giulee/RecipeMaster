@@ -59,7 +59,7 @@ struct RecipeDetail: View {
                     .padding()
                     .foregroundColor(Color(red: 0.333, green: 0.780, blue: 0.509))
                 
-                ForEach(recipe.instructions.split(separator: ","), id: \.self) { ingredient in
+                ForEach(recipe.instructions.split(separator: ";"), id: \.self) { ingredient in
                         Text("• \(ingredient.trimmingCharacters(in: .whitespacesAndNewlines))")
                             .padding(.horizontal)
                             .font(.custom("Futura-Regular", size: 18))

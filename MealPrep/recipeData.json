@@ -7,7 +7,6 @@
         "id": 1001,
         "isFeatured": true,
         "isFavorite": true,
-        
         "equipment": "TBA",
         "ingredients": "180g Spaghetti pasta, 3Tbs Olive oil, 300g Marinara mix, 2 Cloves garlic, 1/2 Onion, 2 Cups tomato passata, 2Tbs Chopped parsley.",
         "instructions": "THIS IS A TEST, Heat pasta according to package instructions, peel shrimp, salt and pepper",
@@ -145,9 +144,9 @@
         "id": 1011,
         "isFeatured": false,
         "isFavorite": true,
-        "equipment": "TBA",
-        "ingredients": "TBA",
-        "instructions": "TBA",
+        "equipment": "Large pot, Large skillet or wok, Cutting board, Knife, Mixing bowls, Cooking utensils",
+        "ingredients": "Noodles (spaghetti or egg noodles), Eggs, Crab sticks, Mushrooms, Cucumber, Carrots, Soy sauce, Sesame oil, Salt and pepper to taste, Optional: Green onions or cilantro for garnish",
+        "instructions": "Cook the noodles according to the package instructions until they are al dente. Drain and set aside.;While the noodles are cooking, prepare the other ingredients. Slice the crab sticks into thin strips. Slice the mushrooms, cucumber, and carrots into thin strips or julienne them.;In a small bowl, beat the eggs with a pinch of salt and pepper.;Heat a bit of oil in a large skillet or wok over medium heat. Pour in the beaten eggs and cook, stirring gently, until they are scrambled and set. Remove the scrambled eggs from the skillet and set aside.;In the same skillet or wok, add a bit more oil if needed and stir-fry the mushrooms, cucumber, and carrots until they are tender-crisp.;Add the crab sticks to the skillet and stir-fry for another minute or two until they are heated through.;Return the cooked noodles and scrambled eggs to the skillet. Drizzle with soy sauce and sesame oil to taste, and toss everything together until well combined and heated through.;Taste and adjust seasoning with more soy sauce, sesame oil, salt, or pepper as needed.;Serve the noodles hot, garnished with chopped green onions or cilantro if desired.",
         "imageName": "noodles"
     },
     
@@ -159,11 +158,12 @@
         "id": 1012,
         "isFeatured": false,
         "isFavorite": true,
-        "equipment": "TBA",
-        "ingredients": "TBA",
-        "instructions": "TBA",
+        "equipment": "Mixing bowls, Whisk, Cutting board, Knife, Salad spinner (optional)",
+        "ingredients": "Cooked chicken breast (sliced or shredded), Mixed salad greens, Cherry tomatoes (halved), Cucumber (diced), Red onion (thinly sliced), Avocado (diced), Bell pepper (diced), Olive oil, Lemon juice or vinegar, Dijon mustard, Honey or maple syrup, Salt and pepper to taste, Optional: crumbled feta cheese",
+        "instructions": "In a large bowl, combine the cooked chicken, salad greens, cherry tomatoes, cucumber, red onion, avocado, bell pepper, and any optional ingredients you choose.; In a small bowl, whisk together the dressing ingredients: olive oil, lemon juice or vinegar, Dijon mustard, honey or maple syrup, salt, and pepper.;Pour the dressing over the salad and toss gently to coat everything evenly.; Serve immediately, or refrigerate until ready to serve.",
         "imageName": "chickenSalad"
     },
     
 ]
+
 
