@@ -12,6 +12,18 @@ struct LoginView: View {
     
     @State private var username: String = ""
     @State private var password: String = ""
+    @State private var showError: Bool = false
+    
+    func isValidLogin(username: String, password: String) -> Bool {
+        
+        let setUsername = UserDefaults.standard.string(forKey: "newUserName")
+        let setPassword = UserDefaults.standard.string(forKey: "newPassword")
+       
+        if setUsername == username && setPassword == password {
+            return true
+        }
+        return false
+    }
     
     var body: some View {
         NavigationView{
@@ -45,9 +57,9 @@ struct LoginView: View {
                     .onDisappear{
                         UserDefaults.standard.setValue(username, forKey: "username")
                     }
+                    .autocapitalization(.none)
                 
-                
-                TextField("Password", text: $password)
+                SecureField("Password", text: $password)
                     .padding()
                     .font(.custom("Futura-Regular", size: 18))
                     .frame(width: 300.0)
@@ -61,11 +73,17 @@ struct LoginView: View {
                     .onDisappear{
                         UserDefaults.standard.setValue(password, forKey: "password")
                     }
+                    .autocapitalization(.none)
                 
                 
                 Spacer()
                 
-                NavigationLink(destination: HomeView(username: username).navigationBarBackButtonHidden(true), label: {Text("Login")})
+    
+                if showError {
+                    Text("Incorrect email or password.")
+                }
+                 
+                NavigationLink(destination: HomeView(username: username) .navigationBarBackButtonHidden(true), label: {Text("Login")})
                         .font(.custom("Futura-Bold", size: 24))
                         .padding()
                         .frame(width: 300.0)
@@ -74,10 +92,19 @@ struct LoginView: View {
                         .padding([.horizontal], 4)
                         .overlay(RoundedRectangle(cornerRadius: 100.0).stroke(Color.white))
                         .foregroundColor(Color.white)
-                        .background(Color(red: 0.333, green: 0.780, blue: 0.509))
+                        .background(isValidLogin(username: username, password: password) || (username.isEmpty || password.isEmpty) ? Color(red: 0.333, green: 0.780, blue: 0.509) : Color.gray)
                         .cornerRadius(100.0)
                         .padding()
-                HStack{
+                        .disabled(!isValidLogin(username: username, password: password))
+                        .onTapGesture {
+                            if !isValidLogin(username: username, password: password) {
+                                showError = true
+                            } else {
+                                showError = false
+                            }
+                        }
+    
+                HStack {
                     Text("Don't have an account?")
                         .font(.custom("Futura-Regular", size: 20))
                         .foregroundColor(Color(red: 0.474, green: 0.498, blue: 0.623))
@@ -89,8 +116,9 @@ struct LoginView: View {
                 }
                 
             }
-            
+        
         }
+        
     }
 }
 

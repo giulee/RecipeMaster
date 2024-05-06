@@ -8,9 +8,7 @@
 import SwiftUI
 
 
-
 struct SignUpView: View {
-
     @State private var newUsername: String = ""
     @State private var newPassword: String = ""
     
@@ -44,9 +42,9 @@ struct SignUpView: View {
                     .cornerRadius(100.0)
                     .padding(.bottom)
                     .onDisappear{
-                        UserDefaults.standard.setValue(newUsername, forKey: "newUserName")
+                        UserDefaults.standard.setValue(newUsername, forKey: "newUserName");
                     }
-                
+                    .autocapitalization(.none)
                 
                 TextField("Create Password", text: $newPassword)
                     .padding()
@@ -60,9 +58,9 @@ struct SignUpView: View {
                     .cornerRadius(100.0)
                 
                     .onDisappear{
-                        UserDefaults.standard.setValue(newPassword, forKey: "newPassword")
+                        UserDefaults.standard.setValue(newPassword, forKey: "newPassword");
                     }
-                
+                    .autocapitalization(.none)
                 
                 Spacer()
                 
