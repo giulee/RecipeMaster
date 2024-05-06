@@ -7,10 +7,11 @@
         "id": 1001,
         "isFeatured": true,
         "isFavorite": true,
-        
+
         "equipment": "Stove, 1 Large pot, 1 Pan",
         "ingredients": "300g Spaghetti pasta, 250g mixed seafood, 3 cloves garlic (minced), 1 small onion, 1 can diced tomatoes, 2Tbs olive oil, 1/4 Tsp red pepper, 2Tbs Chopped parsley.",
         "instructions": "Cook the pasta according to box instructions in a large pot of salted boiling water., Heat 1Tbs of oilive oil in a large skillet over medium heat. Add the mixed seafood and cook until they're just cooked through (approx 2-3 minutes). Remove seafood from the skillet and set aside., Make the sauce. In the same skillet add another tablespoon of olive oil. Add the minced garlic and chopped onion sauté until they're softened and fragrant (approx 2 minutes). Add the diced tomatoes and red pepper flakes. Season with salt and pepper to taste. Simmer the sauce for about 5-7 minutes until it thickens slightly., Combine the pasta and seafood. Add the cooked seafood back into the skillet with the tomato sauce. Stir gently to combine allowing the seafood to heat through for another 2-3 minutes., Finish up. Add the cooked pasta to the skillet with the seafood and sauce. Toss everything together adding a splash of reserved pasta water if needed to loosen the sauce and coat the pasta evenly., Garnish with chopped parsley.",
+
         "imageName": "pasta"
     },
     {
@@ -145,9 +146,11 @@
         "id": 1011,
         "isFeatured": false,
         "isFavorite": true,
+
         "equipment": "Stove, Large pot, Skillet",
         "ingredients": "200g udon noodles, 2Tbs sesame oil, 1 carrot thinly sliced, 100g crab sticks sliced into strips, 100g mushrooms, 2 eggs, 2Tbs soy sauce, 1Tbs oyster sauce",
         "instructions": "Cook the noodles: Bring a pot of water to a boil. Cook the udon noodles according to the package instructions until they are al dente. Drain and rinse the noodles under cold water to stop the cooking process. Set aside., Prepare the sauce: mix together the soy sauce and oyster sauce. Set aside., Stir-fry large ingredients: Heat sesame oil in a large skillet or wok over medium heat. Add the carrots to the skillet and stir-fry for another 2-3 minutes until they start to soften. Add sliced mushrooms and crab sticks to the skillet. Stir-fry for 2-3 minutes until the mushrooms are tender and the crab sticks are heated through., Boil the eggs seperately for 4 minutes and peel once cooled. Cut into slices., Combine ingredients: Add the cooked udon noodles to the skillet with the cooked vegetables and crab sticks. Pour the prepared sauce over the noodles and toss everything together until the noodles are evenly coated with the sauce and heated through. Add the eggs last.",
+
         "imageName": "noodles"
     },
     
@@ -159,11 +162,14 @@
         "id": 1012,
         "isFeatured": false,
         "isFavorite": true,
+
         "equipment": "Large mixing bowl",
         "ingredients": "2 cups cooked chicken breast shredded, 1/2 cup mayonnaise, 1 Tbs djon mustard, 1 cup cherry tomatoes, 1/4 cup red onion finely chopped, 1/4 cup sliced almonds toasted, salt and pepper, lettuce leaves",
         "instructions": "Prepare the chicken: Once chickne is cooked - dice or shred it into bite-sized pieces., Make the dressing: In a large mixing bowl - combine the mayonnaise and Dijon mustard. Stir until well combined., Assemble the salad: add the diced or shredded chicken breast to the bowl with the dressing. Add cherry tomatoes and red onion and toasted sliced almonds (if using) to the bowl., Season and mix: Season the salad with salt and pepper to taste. Gently toss all the ingredients together until the chicken is evenly coated with the dressing and the other ingredients are well distributed.",
+
         "imageName": "chickenSalad"
-    },
+    }
     
 ]
+
 
