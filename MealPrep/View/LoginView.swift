@@ -81,6 +81,7 @@ struct LoginView: View {
     
                 if showError {
                     Text("Incorrect email or password.")
+                        .foregroundColor(.red)
                 }
                  
                 NavigationLink(destination: HomeView(username: username) .navigationBarBackButtonHidden(true), label: {Text("Login")})
