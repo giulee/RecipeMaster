@@ -20,11 +20,18 @@ struct RecipeRow: View {
                                 .frame(width: 180, height: 160)
                                 .cornerRadius(15)
                             
-                            
-                            Text(recipe.name)
-                                .font(.custom("Futura-Bold", size: 18))
-                                .multilineTextAlignment(.leading)
-                            
+                            HStack(){
+                                if recipe.isFavorite{
+                                    Text("❤️")
+                                    .multilineTextAlignment(.leading)
+
+                                }
+                                
+                                Text(recipe.name)
+                                    .font(.custom("Futura-Bold", size: 18))
+                                
+                            }
+        
                             Text(recipe.time)
                                 .font(.custom("Futura-Regular", size: 15))
                                 .multilineTextAlignment(.leading)

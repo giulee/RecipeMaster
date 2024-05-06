@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RecipeDetail: View {
-    var recipe: Recipe
+    @State var recipe: Recipe
     
     var body: some View {
         ScrollView {
@@ -19,9 +19,20 @@ struct RecipeDetail: View {
                
 
             VStack(alignment: .leading) {
-                Text(recipe.name)
-                    .font(.custom("Futura-Bold", size: 25))
-                    .padding()
+                HStack{
+                    Text(recipe.name)
+                        .font(.custom("Futura-Bold", size: 25))
+                        .padding()
+                    Spacer()
+                    Button(action:{
+                        recipe.isFavorite.toggle()
+                    }){
+                        Image(recipe.isFavorite ? "heartFilled" : "heart")
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .padding()
+                    }
+                }
 
                 HStack {
                     Text(recipe.time)
