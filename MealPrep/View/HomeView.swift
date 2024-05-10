@@ -67,14 +67,17 @@ struct HomeView: View {
                         }
                         
                         
-                        Section(title: "Popular Recipes", recipes: recipes.prefix(4))
+                        Section(title: "Popular Recipes", recipes: recipes.prefix(12).dropFirst(8))
                         
-                        Section(title: "Latest Recipes", recipes: recipes.prefix(8).dropFirst(4))
+                        Section(title: "Latest Recipes", recipes: recipes.prefix(4))
                         
-                        Section(title: "Quick & Easy Recipes", recipes: recipes.prefix(12).dropFirst(8))
+                        Section(title: "Quick & Easy Recipes", recipes: recipes.prefix(8).dropFirst(4))
+                                              
+                        Section(title: "Healthy Recipes", recipes: recipes.prefix(16).dropFirst(12))
                         
                     }
                     .padding(.horizontal)
+                    .padding(.bottom, 70)
                 }
                 
                 VStack(){
@@ -95,7 +98,7 @@ struct HomeView: View {
                                         .padding(.top)
                                     Text("Home")
                                         .padding(.top)
-                                        .font(.custom("Futura-Bold", size: 16))
+                                        .font(.custom("Futura", size: 16))
                                         .foregroundColor(.black)
                             }
                                            })
@@ -112,7 +115,7 @@ struct HomeView: View {
                                         .padding(.top)
                                     Text("My Recipes")
                                         .padding(.top)
-                                        .font(.custom("Futura-Bold", size: 16))
+                                        .font(.custom("Futura", size: 16))
                                         .foregroundColor(.black)
                             }
                                            })

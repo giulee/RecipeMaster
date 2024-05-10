@@ -12,6 +12,7 @@ struct VeganRecipeView: View {
     
     var body: some View {
         NavigationView {
+            ZStack{
             ScrollView {
                 VStack(alignment: .leading, spacing: 20) {
                     Text("Explore Recipes")
@@ -71,12 +72,59 @@ struct VeganRecipeView: View {
                         
                     FilteredSection(recipes: recipes.prefix(4).dropFirst(2))
                     
-                    FilteredSection(recipes: recipes.prefix(6).dropFirst(4))
+                    FilteredSection(recipes: recipes.prefix(14).dropFirst(12))
                 }
                 .padding(.horizontal)
+                .padding(.bottom, 70.0)
+                            }
+                                VStack(){
+                                    Spacer()
+                                    ZStack{
+                                        Rectangle()
+                                            .fill(Color.white)
+                                            .edgesIgnoringSafeArea(.bottom)
+                                            .frame(height: 90)
+                                        Spacer()
+                                        HStack{
+                                            Spacer()
+                                            NavigationLink(destination: HomeView(username: username).navigationBarBackButtonHidden(true), label: {
+                                                VStack {
+                                                    Image("homeOpen")
+                                                        .aspectRatio(contentMode: .fit)
+                                                        .frame(width: 10, height: 10)
+                                                        .padding(.top)
+                                                    Text("Home")
+                                                        .padding(.top)
+                                                        .font(.custom("Futura", size: 16))
+                                                        .foregroundColor(.black)
+                                                }
+                                            })
+                                            .padding(.top, 10.0)
+                                            .navigationBarHidden(true)
+                                            
+                                            Spacer()
+                                                .frame(width: 140)
+                                            NavigationLink(destination: SavedRecipesView(username: username).navigationBarBackButtonHidden(true), label: {
+                                                VStack{
+                                                    Image("savedClosed")
+                                                        .aspectRatio(contentMode: .fit)
+                                                        .frame(width: 10, height: 10)
+                                                        .padding(.top)
+                                                    Text("My Recipes")
+                                                        .padding(.top)
+                                                        .font(.custom("Futura", size: 16))
+                                                        .foregroundColor(.black)
+                                                }
+                                            })
+                                            .padding(.top, 10.0)
+                                            .navigationBarHidden(true)
+                                            .navigationBarTitle("", displayMode: .inline)
+                                            Spacer()
+                                        }
+                                    }
+                                }
             }
-            .navigationBarTitle("", displayMode: .inline)
-            .navigationBarHidden(true)
+            
         }
     }
 }

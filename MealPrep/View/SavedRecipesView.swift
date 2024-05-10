@@ -27,6 +27,7 @@ struct SavedRecipesView: View {
                         
                         SavedSection(recipes:recipes.prefix(12).dropFirst(8))
                     }
+                    .padding(.bottom, 70)
                 }
                 VStack(){
                     Spacer()
@@ -46,7 +47,7 @@ struct SavedRecipesView: View {
                                         .padding(.top)
                                     Text("Home")
                                         .padding(.top)
-                                        .font(.custom("Futura-Bold", size: 16))
+                                        .font(.custom("Futura", size: 16))
                                         .foregroundColor(.black)
                             }
                                            })
@@ -63,7 +64,7 @@ struct SavedRecipesView: View {
                                         .padding(.top)
                                     Text("My Recipes")
                                         .padding(.top)
-                                        .font(.custom("Futura-Bold", size: 16))
+                                        .font(.custom("Futura", size: 16))
                                         .foregroundColor(.black)
                             }
                                            })

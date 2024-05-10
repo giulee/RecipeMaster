@@ -29,6 +29,10 @@ struct SignUpView: View {
                     .foregroundColor(Color(red: 0.474, green: 0.498, blue: 0.623))
                 
                 Spacer()
+                Image("logo")
+                    .resizable()
+                    .frame(width: 150, height: 140)
+                Spacer()
                 
                 TextField("Email", text: $newUsername)
                     .padding()

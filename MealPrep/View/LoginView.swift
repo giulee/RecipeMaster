@@ -40,6 +40,10 @@ struct LoginView: View {
                 Text("Login to continue")
                     .font(.custom("Futura-Regular", size: 20))
                     .foregroundColor(Color(red: 0.474, green: 0.498, blue: 0.623))
+                Spacer()
+                Image("logo")
+                    .resizable()
+                    .frame(width: 150, height: 140)
                 
                 Spacer()
                 
