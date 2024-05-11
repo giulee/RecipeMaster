@@ -9,6 +9,7 @@ import SwiftUI
 
 struct VeganRecipeView: View {
     var username: String
+    @ObservedObject var modelData: ModelData
     
     var body: some View {
         NavigationView {
@@ -19,7 +20,7 @@ struct VeganRecipeView: View {
                             .font(.custom("Futura-Bold", size: 40))
                             .padding([.top, .leading, .bottom])
                         HStack{
-                            NavigationLink(destination: HomeView(username: username).navigationBarBackButtonHidden(true), label: {Text("All")})
+                            NavigationLink(destination: HomeView(username: username, modelData: ModelData()).navigationBarBackButtonHidden(true), label: {Text("All")})
                                 .font(.custom("Futura-Bold", size: 16))
                                 .frame(width: 50.0)
                                 .frame(height: 45)
@@ -31,7 +32,7 @@ struct VeganRecipeView: View {
                                 .padding(.leading, 5.0)
                             
                             Spacer()
-                            NavigationLink(destination: VeganRecipeView(username: username).navigationBarBackButtonHidden(true), label: {Text("vegan")})
+                            NavigationLink(destination: VeganRecipeView(username: username, modelData: ModelData()).navigationBarBackButtonHidden(true), label: {Text("vegan")})
                                 .font(.custom("Futura-Bold", size: 16))
                                 .frame(width:80.0)
                                 .frame(height: 45)
@@ -43,7 +44,7 @@ struct VeganRecipeView: View {
                             
                             
                             Spacer()
-                            NavigationLink(destination: GlutenFreeView(username: username).navigationBarBackButtonHidden(true), label: {Text("gluten free")})
+                            NavigationLink(destination: GlutenFreeView(username: username, modelData:ModelData()).navigationBarBackButtonHidden(true), label: {Text("gluten free")})
                                 .font(.custom("Futura-Bold", size: 16))
                                 .frame(width: 120.0)
                                 .frame(height: 45)
@@ -54,7 +55,7 @@ struct VeganRecipeView: View {
                                 .cornerRadius(100.0)
                             
                             Spacer()
-                            NavigationLink(destination: VegetarianView(username: username).navigationBarBackButtonHidden(true), label: {Text("vegetarian")})
+                            NavigationLink(destination: VegetarianView(username: username, modelData:ModelData()).navigationBarBackButtonHidden(true), label: {Text("vegetarian")})
                                 .font(.custom("Futura-Bold", size: 16))
                                 .frame(width: 115.0)
                                 .frame(height: 45)
@@ -68,11 +69,11 @@ struct VeganRecipeView: View {
                         }
                         
                         Spacer()
-                        FilteredSection(recipes: recipes.prefix(2))
+                        FilteredSection(recipes: modelData.recipes.prefix(2))
                         
-                        FilteredSection(recipes: recipes.prefix(4).dropFirst(2))
+                        FilteredSection(recipes: modelData.recipes.prefix(4).dropFirst(2))
                         
-                        FilteredSection(recipes: recipes.prefix(14).dropFirst(12))
+                        FilteredSection(recipes: modelData.recipes.prefix(14).dropFirst(12))
                     }
                     .padding(.horizontal)
                     .padding(.bottom, 70.0)
@@ -87,7 +88,7 @@ struct VeganRecipeView: View {
                         Spacer()
                         HStack{
                             Spacer()
-                            NavigationLink(destination: HomeView(username: username).navigationBarBackButtonHidden(true), label: {
+                            NavigationLink(destination: HomeView(username: username, modelData:ModelData()).navigationBarBackButtonHidden(true), label: {
                                 VStack {
                                     Image("homeOpen")
                                         .aspectRatio(contentMode: .fit)
@@ -104,7 +105,7 @@ struct VeganRecipeView: View {
                             
                             Spacer()
                                 .frame(width: 140)
-                            NavigationLink(destination: SavedRecipesView(username: username).navigationBarBackButtonHidden(true), label: {
+                            NavigationLink(destination: SavedRecipesView(username: username, modelData:ModelData()).navigationBarBackButtonHidden(true), label: {
                                 VStack{
                                     Image("savedClosed")
                                         .aspectRatio(contentMode: .fit)
@@ -131,14 +132,14 @@ struct VeganRecipeView: View {
 
 struct FilteredSection: View {
     //  var title: String
-    var recipes: ArraySlice<Recipe>
+    var recipes: ArraySlice<RecipeModel.Recipe>
     
     var body: some View {
         
         HStack( spacing: 10) {
             ForEach(recipes, id: \.id) { recipe in
-                NavigationLink(destination: RecipeDetail(recipe: recipe)) {
-                    RecipeRow(recipe: recipe)
+                NavigationLink(destination: RecipeDetail(recipe: recipe, modelData:ModelData())) {
+                    RecipeRow(recipe: recipe, modelData:ModelData())
                         .foregroundColor(.black)
                         .padding(.leading, 10.0)
                 }
@@ -149,5 +150,5 @@ struct FilteredSection: View {
 
 
 #Preview {
-    VeganRecipeView(username: "")
+    VeganRecipeView(username: "", modelData: ModelData())
 }

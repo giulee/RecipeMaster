@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct SavedRecipesView: View {
-    
     var username: String
+    @ObservedObject var modelData: ModelData
     
     var body: some View {
         NavigationView {
@@ -21,11 +21,11 @@ struct SavedRecipesView: View {
                             .font(.custom("Futura-Bold", size: 40))
                             .padding(.bottom)
                         
-                        SavedSection(recipes: recipes.prefix(2))
+                        SavedSection(recipes: modelData.recipes.prefix(2))
                         
-                        SavedSection( recipes:recipes.prefix(8).dropFirst(4))
+                        SavedSection( recipes:modelData.recipes.prefix(8).dropFirst(4))
                         
-                        SavedSection(recipes:recipes.prefix(12).dropFirst(8))
+                        SavedSection(recipes:modelData.recipes.prefix(12).dropFirst(8))
                     }
                     .padding(.bottom, 70)
                 }
@@ -39,7 +39,7 @@ struct SavedRecipesView: View {
                         Spacer()
                         HStack{
                             Spacer()
-                            NavigationLink(destination: HomeView(username: username).navigationBarBackButtonHidden(true), label: {
+                            NavigationLink(destination: HomeView(username: username, modelData: ModelData()).navigationBarBackButtonHidden(true), label: {
                                 VStack {
                                     Image("homeClosed")
                                         .aspectRatio(contentMode: .fit)
@@ -56,7 +56,7 @@ struct SavedRecipesView: View {
                             
                             Spacer()
                                 .frame(width: 140)
-                            NavigationLink(destination: SavedRecipesView(username: username).navigationBarBackButtonHidden(true), label: {
+                            NavigationLink(destination: SavedRecipesView(username: username, modelData: ModelData()).navigationBarBackButtonHidden(true), label: {
                                 VStack{
                                     Image("savedOpen")
                                         .aspectRatio(contentMode: .fit)
@@ -83,7 +83,7 @@ struct SavedRecipesView: View {
 
 struct SavedSection: View {
     
-    var recipes: ArraySlice<Recipe>
+    var recipes: ArraySlice<RecipeModel.Recipe>
     
     var body: some View {
         
@@ -91,8 +91,8 @@ struct SavedSection: View {
             
             HStack( spacing: 10) {
                 ForEach(recipes, id: \.id) { recipe in
-                    NavigationLink(destination: RecipeDetail(recipe: recipe)) {
-                        RecipeRow(recipe: recipe)
+                    NavigationLink(destination: RecipeDetail(recipe: recipe, modelData:ModelData())) {
+                        RecipeRow(recipe: recipe, modelData:ModelData())
                             .foregroundColor(.black)
                     }
                 }
@@ -101,6 +101,6 @@ struct SavedSection: View {
     }
 }
 #Preview {
-    SavedRecipesView(username: "")
+    SavedRecipesView(username: "", modelData: ModelData())
     
 }

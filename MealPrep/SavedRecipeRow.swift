@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct SavedRecipeRow: View {
-    var recipe: Recipe
+    var recipe: RecipeModel.Recipe
+    @ObservedObject var modelData:ModelData
     
     var body: some View {
        
@@ -35,13 +36,15 @@ struct SavedRecipeRow: View {
             }
              
         }
-    }
+}
 
+let modelData = ModelData()
 #Preview {
-    Group{
-        SavedRecipeRow(recipe: recipes[0])
-        SavedRecipeRow(recipe: recipes[1])
-        SavedRecipeRow(recipe: recipes[2])
-        SavedRecipeRow(recipe: recipes[3])
+    Group {
+        SavedRecipeRow(recipe: modelData.recipes[0], modelData: ModelData())
+        SavedRecipeRow(recipe: modelData.recipes[1], modelData: ModelData())
+        SavedRecipeRow(recipe: modelData.recipes[2], modelData: ModelData())
+        SavedRecipeRow(recipe: modelData.recipes[3], modelData: ModelData())
     }
 }
+

@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct RecipeRow: View {
-    var recipe: Recipe
+    var recipe: RecipeModel.Recipe
+    @ObservedObject var modelData:ModelData
     
     var body: some View {
         VStack{
@@ -53,8 +54,8 @@ struct RecipeRow: View {
 
 #Preview {
     Group{
-        RecipeRow(recipe: recipes[0])
-        RecipeRow(recipe: recipes[1])
+        RecipeRow(recipe: modelData.recipes[0], modelData: ModelData())
+        RecipeRow(recipe: modelData.recipes[1], modelData: ModelData())
      
     }
     

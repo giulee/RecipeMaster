@@ -8,7 +8,15 @@
 import SwiftUI
 
 struct RecipeDetail: View {
-    @State var recipe: Recipe
+    var recipe: RecipeModel.Recipe
+    @ObservedObject var modelData: ModelData
+    @State private var isFavorite:Bool
+    
+    init(recipe: RecipeModel.Recipe, modelData: ModelData) {
+        self.recipe = recipe
+        self.modelData = modelData
+        self._isFavorite = State(initialValue: recipe.isFavorite)
+    }
     
     var body: some View {
         ScrollView {
@@ -25,7 +33,9 @@ struct RecipeDetail: View {
                         .padding()
                     Spacer()
                     Button(action:{
-                        recipe.isFavorite.toggle()
+//                        toggleFavorite()
+                        modelData.toggleFavorite(recipe: recipe)
+//                        modelData.saveChanges()
                     }){
                         Image(recipe.isFavorite ? "heartFilled" : "heart")
                             .resizable()
@@ -103,10 +113,22 @@ struct RecipeDetail: View {
                 
             }
             .padding(.horizontal, 25.0)
+            .onReceive(modelData.objectWillChange) { _ in
+                isFavorite = modelData.recipes.first(where: { $0.id == recipe.id })?.isFavorite ?? false
+            }
+            }
+        
         }
     }
-}
+    
+//    private func toggleFavorite() {
+//        if let index = modelData.recipes.firstIndex(where: { $0.id == recipe.id }) {
+//            modelData.recipes[index].isFavorite.toggle()
+//            modelData.saveChanges()
+//        }
+//    }
+//}
 
 #Preview {
-    RecipeDetail(recipe: recipes[0])
+    RecipeDetail(recipe: modelData.recipes[0], modelData:ModelData())
 }

@@ -11,6 +11,7 @@ import SwiftUI
 struct SignUpView: View {
     @State private var newUsername: String = ""
     @State private var newPassword: String = ""
+    @ObservedObject var modelData:ModelData
     
     var body: some View {
         NavigationView{
@@ -68,7 +69,7 @@ struct SignUpView: View {
                 
                 Spacer()
                 
-                NavigationLink(destination: HomeView(username: newUsername).navigationBarBackButtonHidden(true), label: {Text("Sign Up")})
+                NavigationLink(destination: HomeView(username: newUsername, modelData: ModelData()).navigationBarBackButtonHidden(true), label: {Text("Sign Up")})
                     .font(.custom("Futura-Bold", size: 24))
                     .padding()
                     .frame(width: 300.0)
@@ -98,5 +99,5 @@ struct SignUpView: View {
 }
 
 #Preview {
-    SignUpView()
+    SignUpView(modelData: ModelData())
 }
