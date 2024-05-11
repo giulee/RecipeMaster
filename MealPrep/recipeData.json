@@ -1,174 +1,218 @@
 [
     {
-        "name": "Seafood Pasta",
-        "time": "40mins",
-        "serving": "4 people",
+        "name": "Pumpkin Soup",
+        "time": "30mins",
+        "serving": "3 people",
         "category": "TBA",
         "id": 1001,
-        "isFeatured": true,
-        "isFavorite": true,
-
-        "equipment": "Stove, 1 Large pot, 1 Pan",
-        "ingredients": "300g Spaghetti pasta, 250g mixed seafood, 3 cloves garlic (minced), 1 small onion, 1 can diced tomatoes, 2Tbs olive oil, 1/4 Tsp red pepper, 2Tbs Chopped parsley.",
-        "instructions": "Cook the pasta according to box instructions in a large pot of salted boiling water.; Heat 1Tbs of oilive oil in a large skillet over medium heat. Add the mixed seafood and cook until they're just cooked through (approx 2-3 minutes). Remove seafood from the skillet and set aside.; Make the sauce. In the same skillet add another tablespoon of olive oil. Add the minced garlic and chopped onion sauté until they're softened and fragrant (approx 2 minutes). Add the diced tomatoes and red pepper flakes. Season with salt and pepper to taste. Simmer the sauce for about 5-7 minutes until it thickens slightly.; Combine the pasta and seafood. Add the cooked seafood back into the skillet with the tomato sauce. Stir gently to combine allowing the seafood to heat through for another 2-3 minutes.; Finish up. Add the cooked pasta to the skillet with the seafood and sauce. Toss everything together adding a splash of reserved pasta water if needed to loosen the sauce and coat the pasta evenly.; Garnish with chopped parsley.",
-
-        "imageName": "pasta"
-    },
-    {
-        "name": "Salmon",
-        "time": "20mins",
-        "serving": "4 people",
-        "category": "TBA",
-        "id": 1002,
         "isFeatured": false,
         "isFavorite": true,
-        "equipment": "Stove, 1 Large skillet",
-        "ingredients": "2 Salmon fillets, 2Tbs oilive oil, Salt and pepper, 2 cloves garlic minced, 1Tsp lemon zest, 1Tbs lemon juice, 1 Tbs fresh dill, 2 cups mixed green vegetables, 1Tbs butter",
-        "instructions": "Prepare the salmon. Pat the salmon fillets dry with paper towels. Season both sides with salt and pepper.; Cook the salmon. Heat 1 tablespoon of olive oil in a large skillet over medium-high heat. Once hot add the salmon fillets to the skillet with skin-side down. Cook the salmon for about 4-5 minutes on the skin side until it's crispy and golden brown. Flip the fillets and cook for an additional 3-4 minutes on the other side until the salmon is cooked through but still moist. Adjust cooking time based on the thickness of the fillets.; Prepare the greens. In the same skillet add the remaining tablespoon of olive oil and butter over medium heat. Add the minced garlic and sauté for about 1 minute until fragrant. Add the sliced carrots to the skillet and saute for 2-3 minutes.; Cook the vegetables. Add the remaining green vegetables to the skillet. Season with salt and pepper to taste. Sauté the vegetables for 5-7 minutes until they're crisp-tender and bright green.; Finish and serve. Once the vegetables are cooked return the cooked salmon fillets to the skillet with the vegetables. Drizzle the lemon juice over the salmon and vegetables. Sprinkle lemon zest and chopped dill on top.",
-        "imageName": "salmon"
+        "equipment": "Stove, Large pot, Blender",
+        "ingredients": "1Tbs olive oil, 1 small onion, 2 cloves minced garlic, 1Tsp ground cumin, 1/2 Tsp ground cinnamon, 1/4 Tsp ground nutmeg, 3 cups pumpkin puree, 4 cups vegetable broth, 1 cup coconut milk, Salt and pepper",
+        "instructions": "Heat the olive oil in a large pot over medium heat. Add the chopped onion and sauté for 3-4 minutes until softened.; Add the minced garlic, ground cumin, ground cinnamon and ground nutmeg to the pot. Stir well and cook for another minute until fragrant.; Add the pumpkin puree to the pot. Stir to combine with the onion and spices.; Pour in the vegetable broth and stir everything together until smooth. Bring the mixture to a simmer.; Let the soup simmer for 15-20 minutes and stir occasionally.; Using a blender: carefully blend the soup until smooth and creamy.; Once the soup is blended stir in the coconut milk.; Season the soup with salt and pepper.",
+        "imageName": "pumpkinSoup"
+    },
+    {
+        "name": "Green Salad",
+               "time": "15mins",
+               "serving": "2 people",
+               "category": "vegetarian",
+        "id": 1002,
+        "isFeatured": false,
+        "isFavorite": false,
+               "equipment": "1 large mixing bowl",
+               "ingredients": "4 cups chopped kale, 1 ripe avocado, 1/4 cup sliced toasted almonds, 2 Tbs lemon juice, 2Tbs olive oil, Salt and pepper",
+               "instructions": "Wash the kale leaves under cold water. Chop the leaves into bite sized pieces.; Place chopped kale leaves in a large mixing bowl. Drizzle the lemon juice and oilive oil over the kale.; Using your hands massage the kale leaves for 1-2 minutes until they begin to soften and wilt slightly.; Add the diced avocado and toasted sliced almonds to the bowl. Season with a pinch of salt and pepper.",
+               "imageName": "greenSalad"
     },
     
     {
-        "name": "Classic Quiche",
+        "name": "Tomato Pasta",
         "time": "20mins",
         "serving": "4 people",
         "category": "TBA",
         "id": 1003,
         "isFeatured": false,
         "isFavorite": true,
-        "equipment": "Oven, Mixing bowl, Whisk",
-        "ingredients": "1 pre made pie crust, 6 large eggs, 1 cup milk, 1 cup shredded cheddar cheese, 1 cup diced cooked ham, 1/2 cup chopped vegetables (spinach, onions, mushrooms), salt and pepper",
-        "instructions": "Preheat the oven to 190 degrees celcius; Prepare the pie crust following the instructions for pre-baking; Prepare the filling: in a mixing bowl whisk together the eggs and milk and season with a pinch of salt and pepper. Stir in the shredded cheese and ham and chopped vegetables. Mix everything together.; Assemble and bake: pour the egg mixture into the pie crust and spread it evenly. Place in the oven and bake for 35-40 minutes until the filling is set and the top is golden brown.",
-        "imageName": "quiche"
+        "equipment": "Stove, Large pot, Knife",
+              "ingredients": "225g spaghetti pasta, 2Tbs olive oil, 3 cloves minced garlic, 1 onion finely chopped, 2 cups cherry tomatoes, 1 cup mushrooms, 1/2 cup peas, 1 can crushed tomatoes, 1 Tsp dried oregano, 1Tsp dried basil, Salt and pepper",
+              "instructions": "Cook the pasta according to package instructions until al dente. Drain and set aside.; In a large skillet, heat the olive oil over medium heat. Add the minced garlic and chopped onion. Sauté until fragrant and translucent (approx 2-3 minutes).; Add the halved cherry tomatoes, mushrooms, and peas to the skillet and cook for another 3-4 minutes. Stir in the crushed tomatoes and dried oregano and dried basil. Season with salt and pepper. Allow the sauce to simmer for about 10-15 minutes.; Once the sauce has thickened add the cooked pasta to the skillet and toss until well coated in the sauce. ",
+              "imageName": "mushroomPasta"
     },
     
     {
-        "name": "Fried Rice",
+        "name": "Couscous Salad",
         "time": "20mins",
-        "serving": "4 people",
+        "serving": "2 people",
         "category": "TBA",
         "id": 1004,
         "isFeatured": false,
         "isFavorite": true,
-        "equipment": "Stove, Large skillet or Wok, Rice cooker, Spatula",
-        "ingredients": "3 cups cooked rice, 2Tbs vegetable oil, 2 eggs, 1 cup mixed vegetables (diced carrots, peas, corn, capsicum), 2 cloves garlic minced, 2 green onions, 2Tbs soy sauce, salt and pepper",
-        "instructions": "Prepare ingredients: cook the rice according to package instructions and chill completely.; Cook the eggs: heat 1Tbs vegetable oil in a large skillet or wok over medium heat. Pour the beaten eggs into the skillet and let them cook without stiring. Once the eggs start to set gently scramble them with a spatula until they're cooked through but still slightly moist. Remove the scrambled eggs from the skillet and set aside.; Stir-fry the vegetables: in the same skillet add the remaining tablespoon of vegetable oil. Add the minced garlic and chopped green onions. Sauté for about 30 seconds until fragrant. Add the mixed vegetables to the skillet and stir-fry for 3-4 minutes until they're tender-crisp.; Combine rice and vegetables: Add the cooked rice to the skillet with the vegetables. Use a spatula to break up any clumps of rice and evenly distribute it with the vegetables.; Season and finish: Drizzle the soy sauce over the rice and vegetables. Season with salt and pepper to taste. Stir everything together until the rice is well-coated with the soy sauce and the ingredients are evenly mixed. Add the cooked scrambled eggs back into the skillet with the rice and vegetables.",
-        "imageName": "friedRice"
+        "equipment": "1 Medium saucepan, 1 Large mixing bowl",
+              "ingredients": "1 cup couscous, 1 1/4 cups vegetable broth, 1Tbs olive oil, 1 yellow capsicum diced, 1 cup cherry tomatoes, 1/4 cup red onion, 1/4 cup fresh parsley, 1/4 cup fresh mint leaves, 1 lemon, 2Tbs extra virgin olive oil",
+              "instructions": "In a medium saucepan bring the vegetable broth to a boil. Stir in the couscous and remove from heat. Let it sit for about 5 minutes until the couscous absorbs all the liquid.; Fluff the cooked couscous with a fork to separate the grains and transfer it to a large mixing bowl. Let it cool slightly.; Prepare the vegetables: Dice the yellow capsicum and slice the cherry tomatoes.Finely chop the red onion. Chop the fresh parsley and mint leaves.; Add the diced vegetables and chopped herbs to the couscous. Squeeze in the lemon juice and add the extra virgin olive oil to the mixing bowl.; Gently toss all the ingredients together until well combined and evenly coated in the dressing.",
+              "imageName": "couscousSalad"
     },
     
     {
-        "name": "Prawn Salad",
+        "name": "Salmon",
         "time": "20mins",
-        "serving": "4 people",
+        "serving": "2 people",
         "category": "TBA",
         "id": 1005,
         "isFeatured": false,
         "isFavorite": true,
-        "equipment": "Large salad bowl",
-        "ingredients": "300g cooked prawns, 4 cups mixed salad (lettuce, spinach, arugula), 1 cup cherry tomatoes, 1 sliced cucumber, 1 avocado diced, 1/4 red onion thinly sliced, 1/4 cup fresh parsley chopped, 3Tbs olive oil, 2Tbs lemon juice, 1 garlic clove minced, 1Tsp djon mustard, sald and pepper",
-        "instructions": "If the prawns are not already cooked - cook them in boiling water for 2-3 minutes until they turn pink and opaque. Drain and let them cool.; In a large salad bowl: combine the mixed salad greens with halved cherry tomatoes and cucumber and avocado and onion and parsley.; Make the dressing: In a small bowl: whisk together the olive oil with lemon juice and minced garlic and Dijon mustard until well combined. Season with salt and pepper to taste.; Add the cooked prawns to the salad bowl and drizzle the dressing over the ingredients. Gently toss everything together.",
-        "imageName": "prawnSalad"
+        "equipment": "Stove, 1 Large skillet",
+                "ingredients": "2 Salmon fillets, 2Tbs oilive oil, Salt and pepper, 2 cloves garlic minced, 1Tsp lemon zest, 1Tbs lemon juice, 1 Tbs fresh dill, 2 cups mixed green vegetables, 1Tbs butter",
+                "instructions": "Prepare the salmon. Pat the salmon fillets dry with paper towels. Season both sides with salt and pepper.; Cook the salmon. Heat 1 tablespoon of olive oil in a large skillet over medium-high heat. Once hot add the salmon fillets to the skillet with skin-side down. Cook the salmon for about 4-5 minutes on the skin side until it's crispy and golden brown. Flip the fillets and cook for an additional 3-4 minutes on the other side until the salmon is cooked through but still moist. Adjust cooking time based on the thickness of the fillets.; Prepare the greens. In the same skillet add the remaining tablespoon of olive oil and butter over medium heat. Add the minced garlic and sauté for about 1 minute until fragrant. Add the sliced carrots to the skillet and saute for 2-3 minutes.; Cook the vegetables. Add the remaining green vegetables to the skillet. Season with salt and pepper to taste. Sauté the vegetables for 5-7 minutes until they're crisp-tender and bright green.; Once the vegetables are cooked return the cooked salmon fillets to the skillet with the vegetables. Drizzle the lemon juice over the salmon and vegetables. Sprinkle lemon zest and chopped dill on top.",
+                "imageName": "salmon"
     },
     {
-        "name": "Pumpkin Soup",
+        "name": "Prawn Salad",
         "time": "20mins",
         "serving": "4 people",
         "category": "TBA",
         "id": 1006,
         "isFeatured": false,
         "isFavorite": true,
-        "equipment": "Stove, Large pot, Blender",
-        "ingredients": "1Tbs olive oil, 1 small onion, 2 cloves minced garlic, 1Tsp ground cumin, 1/2 Tsp ground cinnamon, 1/4 Tsp ground nutmeg, 3 cups pumpkin puree, 4 cups vegetable broth, 1 cup coconut milk, salt and pepper",
-        "instructions": "Heat the olive oil in a large pot over medium heat. Add the chopped onion and sauté for 3-4 minutes until softened.; Add the minced garlic and ground cumin and ground cinnamon and ground nutmeg to the pot. Stir well and cook for another minute until fragrant.; Add the pumpkin puree to the pot. Stir to combine with the onion and spices.; Pour in the vegetable broth and stir everything together until smooth. Bring the mixture to a simmer.; Let the soup simmer for 15-20 minutes and stir occasionally.; Using a blender: carefully blend the soup until smooth and creamy.; Once the soup is blended stir in the coconut milk.; Season the soup with salt and pepper.",
-        "imageName": "pumpkinSoup"
+        "equipment": "Large salad bowl",
+              "ingredients": "300g cooked prawns, 4 cups mixed salad (lettuce, spinach, arugula), 1 cup cherry tomatoes, 1 sliced cucumber, 1 avocado diced, 1/4 red onion thinly sliced, 1/4 cup fresh parsley chopped, 3Tbs olive oil, 2Tbs lemon juice, 1 garlic clove minced, 1Tsp djon mustard, Salt and pepper",
+              "instructions": "If the prawns are not already cooked - cook them in boiling water for 2-3 minutes until they turn pink and opaque. Drain and let them cool.; In a large salad bowl: combine the mixed salad greens with halved cherry tomatoes, cucumber, avocado, onion and parsley.; Make the dressing: In a small bowl, whisk together the olive oil with lemon juice and minced garlic and Dijon mustard until well combined. Season with salt and pepper to taste.; Add the cooked prawns to the salad bowl and drizzle the dressing over the ingredients. Gently toss everything together.",
+              "imageName": "prawnSalad"
     },
     
     
     {
-        "name": "Mushroom Pasta",
+        "name": "Chicken Salad",
         "time": "20mins",
-        "serving": "4 people",
+        "serving": "2 people",
         "category": "TBA",
         "id": 1007,
         "isFeatured": false,
         "isFavorite": true,
-        "equipment": "TBA",
-        "ingredients": "TBA",
-        "instructions": "TBA,",
-        "imageName": "mushroomPasta"
+        "equipment": "Large mixing bowl",
+               "ingredients": "2 cups cooked chicken breast shredded, 1/2 cup mayonnaise, 1 Tbs djon mustard, 1 cup cherry tomatoes, 1/4 cup red onion finely chopped, 1/4 cup sliced almonds toasted, Salt and pepper, Lettuce leaves",
+               "instructions": "Prepare the chicken: Once chickne is cooked, dice or shred it into bite-sized pieces.; Make the dressing: In a large mixing bowl, combine the mayonnaise and Dijon mustard. Stir until well combined.; Assemble the salad: add the diced or shredded chicken breast to the bowl with the dressing. Add cherry tomatoes, red onion and toasted sliced almonds (if using) to the bowl.; Season and mix: Season the salad with salt and pepper to taste. Gently toss all the ingredients together until the chicken is evenly coated with the dressing and the other ingredients are well distributed.",
+
+               "imageName": "chickenSalad"
     },
     {
-        "name": "Salmon Curry",
-        "time": "20mins",
-        "serving": "4 people",
+        "name": "Tofu Salad",
+            "time": "15mins",
+            "serving": "3 people",
         "category": "TBA",
         "id": 1008,
         "isFeatured": false,
         "isFavorite": true,
-        "equipment": "TBA",
-        "ingredients": "TBA",
-        "instructions": "TBA,",
-        "imageName": "fishCurry"
-    },
-    
-    {
-        "name": "Green Salad",
-        "time": "15mins",
-        "serving": "2 people",
-        "category": "vegetarian",
-        "id": 1009,
-        "isFeatured": false,
-        "isFavorite": false,
-        "equipment": "1 large mixing bowl",
-        "ingredients": "4 cups chopped kale, 1 ripe avocado, 1/4 cup sliced toasted almonds, 2 Tbs lemon juice, 2Tbs oilive oil, salt and pepper",
-        "instructions": "Wash the kale leaves under cold water. Chop the leaves into bite sized pieces.; Place chopped kale leaves in a large mixing bowl. Drizzle the lemon juice and oilive oil over the kale.; Using your hands massage the kale leaves for 1-2 minutes until they begin to soften and wilt slightly.; Add the diced avocado and toasted sliced almonds to the bowl. Season with a pinch of salt and pepper.",
-        "imageName": "greenSalad"
+        "equipment": "Stove, 1 Saucepan, 1 Skillet, 1 Small bowl ",
+               "ingredients": "1 block firm tofu, 2 eggs, 1 cup cooked corn kernels, 1 cup cherry tomatoes, 1 cup shredded red cabbage, 4 cups torn lettuce leaves, 1Tbs olive oil, 2Tbs lemon juice",
+               "instructions": "Start by boiling the eggs: Place the eggs in a saucepan and cover them with water. Bring the water to a boil over medium-high heat and cook for 4 minutes. Peel the eggs.; Prepare the tofu: Heat 1 tablespoon of olive oil in a non-stick skillet over medium heat. Add the cubed tofu and cook for 8-10 minutes or until the tofu is golden brown and slightly crispy on the outside.; In a large mixing bowl: combine the torn lettuce leaves, cherry tomatoes, shredded red cabbage and cooked corn kernels. Remove the tofu from the heat and add to the mixing bowl.; In a small bowl: whisk together the remaining 1 tablespoon of olive oil and lemon juice. Pour the dressing over the salad ingredients and toss gently to coat everything evenly.",
+
+               "imageName": "tofuSalad"
     },
     
     {
         "name": "Pizza",
-        "time": "20mins",
+                "time": "30mins",
+                "serving": "4 people",
+                "category": "TBA",
+        "id": 1009,
+        "isFeatured": false,
+        "isFavorite": true,
+               "equipment": "Oven, Rolling pin, Baking paper",
+               "ingredients": "1 store bought pizza dough, All-purpose flouw, 1/2 cup of marinara sauce, 1/2 shredded mozzarella cheese, Favoured toppings (olives, mushrooms, tomatoes), Olive oil",
+               "instructions": "Preheat the oven to 230 degrees celsius.; Prepare the pizza dough: dust a clean work surface with flour. Place the pizza dough on the floured surface. Use your hands or a rolling pin to flatten and stretch the dough into a round shape.; Assemble the pizza: Transfer the stretched pizza dough to a parchment paper-lined baking sheet or a pizza peel dusted with cornmeal. Spread the pizza sauce evenly over the dough.; Sprinkle the shredded mozzarella cheese over the sauce. Arrange your desired toppings over the cheese and distribute them evenly across the pizza.; Bake the pizza: Simply place the baking sheet with the pizza in the preheated oven.; Bake for approx 12-15 minutes or until the crust is golden brown.",
+               "imageName": "pizza"
+    },
+    
+    {
+        "name": "Fried Rice",
+               "time": "35mins",
         "serving": "4 people",
         "category": "TBA",
         "id": 1010,
         "isFeatured": false,
         "isFavorite": true,
-        "equipment": "Oven, Rolling pin, Baking paper",
-        "ingredients": "1 store bought pizza dough, All-purpose flouw, 1/2 cup of pizza sauce or marinara sauce, 1/2 shredded mozzarella cheese, favoured toppings (onions, olives, mushrooms, tomatoes, pepperoni), olive oil",
-        "instructions": "Preheat the oven to 230 degrees celsius., Prepare the pizza dough: dust a clean work surface with flour. Place the pizza dough on the floured surface. Use your hands or a rolling pin to flatten and stretch the dough into a round shape.; Assemble the pizza: Transfer the stretched pizza dough to a parchment paper-lined baking sheet or a pizza peel dusted with cornmeal. Spread the pizza sauce evenly over the dough.; Sprinkle the shredded mozzarella cheese over the sauce. Arrange your desired toppings over the cheese and distribute them evenly across the pizza.; Bake the pizza: Simply place the baking sheet with the pizza in the preheated oven.; Bake for approx 12-15 minutes or until the crust is golden brown.",
-        "imageName": "pizza"
+        "equipment": "Stove, Large skillet or Wok, Rice cooker, Spatula",
+               "ingredients": "3 cups cooked rice, 2Tbs vegetable oil, 2 eggs, 1 cup mixed vegetables (arrots, peas, corn), 2 cloves garlic minced, 2 green onions, 2Tbs soy sauce, Salt and pepper",
+               "instructions": "Prepare ingredients: cook the rice according to package instructions and chill completely.; Cook the eggs: heat 1Tbs vegetable oil in a large skillet or wok over medium heat. Pour the beaten eggs into the skillet and let them cook without stiring. Once the eggs start to set gently scramble them with a spatula until they're cooked through but still slightly moist. Remove the scrambled eggs from the skillet and set aside.; Stir-fry the vegetables: in the same skillet add the remaining tablespoon of vegetable oil. Add the minced garlic and chopped green onions. Sauté for about 30 seconds until fragrant. Add the mixed vegetables to the skillet and stir-fry for 3-4 minutes until they're tender-crisp.; Combine rice and vegetables: Add the cooked rice to the skillet with the vegetables. Use a spatula to break up any clumps of rice and evenly distribute it with the vegetables.; Season and finish: Drizzle the soy sauce over the rice and vegetables. Season with salt and pepper to taste. Stir everything together until the rice is well-coated with the soy sauce and the ingredients are evenly mixed. Add the cooked scrambled eggs back into the skillet with the rice and vegetables.",
+               "imageName": "friedRice"
     },
     {
-        "name": "Simple Noodles",
-        "time": "15mins",
-        "serving": "2 people",
+        "name": "Seafood Pasta",
+               "time": "40mins",
+               "serving": "4 people",
         "category": "TBA",
         "id": 1011,
         "isFeatured": false,
-        "isFavorite": true,
+        
+               "isFavorite": true,
+               "equipment": "Stove, 1 Large pot, 1 Pan",
+               "ingredients": "300g Spaghetti pasta, 250g mixed seafood, 3 cloves garlic (minced), 1 small onion, 1 can diced tomatoes, 2Tbs olive oil, 1/4 Tsp red pepper, 2Tbs Chopped parsley.",
+               "instructions": "Cook the pasta according to box instructions in a large pot of salted boiling water.; Heat 1Tbs of oilive oil in a large skillet over medium heat. Add the mixed seafood and cook until they're just cooked through (approx 2-3 minutes). Remove seafood from the skillet and set aside.; Make the sauce: In the same skillet add another tablespoon of olive oil. Add the minced garlic and chopped onion sauté until they're softened and fragrant (approx 2 minutes). Add the diced tomatoes and red pepper flakes. Season with salt and pepper to taste. Simmer the sauce for about 5-7 minutes until it thickens slightly.; Combine the pasta and seafood: Add the cooked seafood back into the skillet with the tomato sauce. Stir gently to combine allowing the seafood to heat through for another 2-3 minutes.; Add the cooked pasta to the skillet with the seafood and sauce. Toss everything together adding a splash of reserved pasta water if needed to loosen the sauce and coat the pasta evenly.; Garnish with chopped parsley.",
 
-        "equipment": "Stove, Large pot, Skillet",
-        "ingredients": "200g udon noodles, 2Tbs sesame oil, 1 carrot thinly sliced, 100g crab sticks sliced into strips, 100g mushrooms, 2 eggs, 2Tbs soy sauce, 1Tbs oyster sauce",
-        "instructions": "Cook the noodles: Bring a pot of water to a boil. Cook the udon noodles according to the package instructions until they are al dente. Drain and rinse the noodles under cold water to stop the cooking process. Set aside.; Prepare the sauce: mix together the soy sauce and oyster sauce. Set aside.; Stir-fry large ingredients: Heat sesame oil in a large skillet or wok over medium heat. Add the carrots to the skillet and stir-fry for another 2-3 minutes until they start to soften. Add sliced mushrooms and crab sticks to the skillet. Stir-fry for 2-3 minutes until the mushrooms are tender and the crab sticks are heated through.; Boil the eggs seperately for 4 minutes and peel once cooled. Cut into slices.; Combine ingredients: Add the cooked udon noodles to the skillet with the cooked vegetables and crab sticks. Pour the prepared sauce over the noodles and toss everything together until the noodles are evenly coated with the sauce and heated through. Add the eggs last.",
-
-        "imageName": "noodles"
+               "imageName": "pasta"
     },
     
-    {
-        "name": "Chicken Salad",
-        "time": "20mins",
-        "serving": "4 people",
-        "category": "TBA",
-        "id": 1012,
+   
+   {
+       "name": "Noodles",
+       "time": "20mins",
+       "serving": "2 people",
+       "category": "TBA",
+       "id": 1012,
         "isFeatured": false,
         "isFavorite": true,
+        "equipment": "Stove, Large pot, Skillet",
+               "ingredients": "200g udon noodles, 2Tbs sesame oil, 1 carrot thinly sliced, 100g crab sticks sliced into strips, 100g mushrooms, 2 eggs, 2Tbs soy sauce, 1Tbs oyster sauce",
+               "instructions": "Cook the noodles: Bring a pot of water to a boil. Cook the udon noodles according to the package instructions until they are al dente. Drain and rinse the noodles under cold water to stop the cooking process. Set aside.; Prepare the sauce: mix together the soy sauce and oyster sauce. Set aside.; Stir-fry large ingredients: Heat sesame oil in a large skillet or wok over medium heat. Add the carrots to the skillet and stir-fry for another 2-3 minutes until they start to soften. Add sliced mushrooms and crab sticks to the skillet. Stir-fry for 2-3 minutes until the mushrooms are tender and the crab sticks are heated through.; Boil the eggs seperately for 4 minutes and peel once cooled. Cut into slices.; Combine ingredients: Add the cooked udon noodles to the skillet with the cooked vegetables and crab sticks. Pour the prepared sauce over the noodles and toss everything together until the noodles are evenly coated with the sauce and heated through. Add the eggs last.",
 
-        "equipment": "Large mixing bowl",
-        "ingredients": "2 cups cooked chicken breast shredded, 1/2 cup mayonnaise, 1 Tbs djon mustard, 1 cup cherry tomatoes, 1/4 cup red onion finely chopped, 1/4 cup sliced almonds toasted, salt and pepper, lettuce leaves",
-        "instructions": "Prepare the chicken: Once chickne is cooked - dice or shred it into bite-sized pieces.; Make the dressing: In a large mixing bowl - combine the mayonnaise and Dijon mustard. Stir until well combined.; Assemble the salad: add the diced or shredded chicken breast to the bowl with the dressing. Add cherry tomatoes and red onion and toasted sliced almonds (if using) to the bowl.; Season and mix: Season the salad with salt and pepper to taste. Gently toss all the ingredients together until the chicken is evenly coated with the dressing and the other ingredients are well distributed.",
+               "imageName": "noodles"
+    },
+   
+   {
+       "name": "Potato Salad",
+       "time": "35mins",
+       "serving": "4 people",
+              "category": "TBA",
+       "id": 1013,
+             "isFeatured": false,
+             "isFavorite": true,
+             
+             "equipment": "Oven, Large mixing bowl, Small bowl, Whisk",
+                   "ingredients": "2 Medium sweet potatoes, 1 Head of broccoli, 1/4 small red cabbage, 1Tbs Olive oil, 1Tsp smoked paprika, 1/2Tsb garlic powder, Salt and pepper, 2Tbs olive oil, 1Tbs balsamic vinegar, 1Tbs maple syrup",
+                   "instructions": "Preheat the oven to 200°C and line a baking sheet with parchment paper.; In a large mixing bowl: toss the diced sweet potatoes with 1 tablespoon of olive oil, smoked paprika, garlic powder and salt and pepper until evenly coated. Spread the sweet potatoes in a single layer on the prepared baking sheet.; Roast the sweet potatoes in the preheated oven for 20-25 minutes until they are tender.; While the potatoes are roasting: blanch the broccoli florets in boiling water for 1-2 minutes.; In a small bowl: whisk together the remaining 1 tablespoon of olive oil with balsamic vinegar and maple syrup.; In a large serving bowl: combine the roasted sweet potatoes and blanched broccoli florets and thinly sliced red cabbage. Drizzle the dressing over the ingredients and toss gently. ",
+                   "imageName": "potatoSalad"
+   },
+   {
+          "name": "Simple Salad",
+          "time": "15mins",
+          "serving": "2 people",
+          "category": "TBA",
+          "id": 1014,
+          "isFeatured": false,
+          "isFavorite": true,
 
-        "imageName": "chickenSalad"
-    }
+          "equipment": "Large mixing bowl, Small bowl",
+          "ingredients": "1 Large cucumber, 1 Cup broccoli florets, 1 Cup bean sprouts, 1/2 Cup fresh parsley leaves, 1 Cup snow peas, 1/4 Cup toasted sesame seeds, 3Tbs rice vinegar, 2Tbs soy sauce, 1Tbs maple syrup, 1Tbs toasted sesame oil",
+          "instructions": "In a large mixing bowl: combine the thinly sliced cucumber, blanched broccoli florets, bean sprouts, chopped parsley leaves and sliced snow peas.; In a small mixing bowl: combine the rice vinegar, soy sauce, maple syrup and sesame oil to make the dressing.; Pour the dressing over the salad ingredients and toss gently to coat everything evenly.",
+          "imageName": "simpleSalad"
+      },
+      
+      {
+          "name": "Classic Quiche",
+          "time": "50mins",
+          "serving": "6 people",
+          "category": "TBA",
+          "id": 1015,
+          "isFeatured": false,
+          "isFavorite": true,
+          "equipment": "Oven, Mixing bowl, Whisk",
+          "ingredients": "1 pre made pie crust, 6 large eggs, 1 cup milk, 1 cup shredded cheddar cheese, 1 cup diced cooked ham, 1/2 cup chopped vegetables (spinach, onions, mushrooms), Salt and pepper",
+          "instructions": "Preheat the oven to 190 degrees celcius.; Prepare the pie crust following the instructions for pre-baking.; Prepare the filling: in a mixing bowl whisk together the eggs and milk and season with a pinch of salt and pepper. Stir in the shredded cheese and ham and chopped vegetables. Mix everything together.; Assemble and bake: pour the egg mixture into the pie crust and spread it evenly. Place in the oven and bake for 35-40 minutes until the filling is set and the top is golden brown.",
+          "imageName": "quiche"
+      },
+      
     
 ]
 

@@ -27,6 +27,7 @@ struct SavedRecipesView: View {
                         
                         SavedSection(recipes:recipes.prefix(12).dropFirst(8))
                     }
+                    .padding(.bottom, 70)
                 }
                 VStack(){
                     Spacer()
@@ -37,7 +38,7 @@ struct SavedRecipesView: View {
                             .frame(height: 90)
                         Spacer()
                         HStack{
-                                Spacer()
+                            Spacer()
                             NavigationLink(destination: HomeView(username: username).navigationBarBackButtonHidden(true), label: {
                                 VStack {
                                     Image("homeClosed")
@@ -46,15 +47,15 @@ struct SavedRecipesView: View {
                                         .padding(.top)
                                     Text("Home")
                                         .padding(.top)
-                                        .font(.custom("Futura-Bold", size: 16))
+                                        .font(.custom("Futura", size: 16))
                                         .foregroundColor(.black)
-                            }
-                                           })
-                                .padding(.top, 10.0)
-                                .navigationBarHidden(true)
+                                }
+                            })
+                            .padding(.top, 10.0)
+                            .navigationBarHidden(true)
                             
-                                Spacer()
-                                    .frame(width: 140)
+                            Spacer()
+                                .frame(width: 140)
                             NavigationLink(destination: SavedRecipesView(username: username).navigationBarBackButtonHidden(true), label: {
                                 VStack{
                                     Image("savedOpen")
@@ -63,15 +64,15 @@ struct SavedRecipesView: View {
                                         .padding(.top)
                                     Text("My Recipes")
                                         .padding(.top)
-                                        .font(.custom("Futura-Bold", size: 16))
+                                        .font(.custom("Futura", size: 16))
                                         .foregroundColor(.black)
-                            }
-                                           })
-                                    .padding(.top, 10.0)
-                                    .navigationBarHidden(true)
-                                    .navigationBarTitle("", displayMode: .inline)
+                                }
+                            })
+                            .padding(.top, 10.0)
+                            .navigationBarHidden(true)
+                            .navigationBarTitle("", displayMode: .inline)
                             Spacer()
-                            }
+                        }
                     }
                 }
             }
@@ -81,7 +82,7 @@ struct SavedRecipesView: View {
 
 
 struct SavedSection: View {
-   
+    
     var recipes: ArraySlice<Recipe>
     
     var body: some View {
