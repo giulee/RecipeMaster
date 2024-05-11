@@ -72,7 +72,7 @@ struct HomeView: View {
                         Section(title: "Latest Recipes", recipes: recipes.prefix(4))
                         
                         Section(title: "Quick & Easy Recipes", recipes: recipes.prefix(8).dropFirst(4))
-                                              
+                        
                         Section(title: "Healthy Recipes", recipes: recipes.prefix(16).dropFirst(12))
                         
                     }
@@ -89,7 +89,7 @@ struct HomeView: View {
                             .frame(height: 90)
                         Spacer()
                         HStack{
-                                Spacer()
+                            Spacer()
                             NavigationLink(destination: HomeView(username: username).navigationBarBackButtonHidden(true), label: {
                                 VStack {
                                     Image("homeOpen")
@@ -100,13 +100,13 @@ struct HomeView: View {
                                         .padding(.top)
                                         .font(.custom("Futura", size: 16))
                                         .foregroundColor(.black)
-                            }
-                                           })
-                                .padding(.top, 10.0)
-                                .navigationBarHidden(true)
+                                }
+                            })
+                            .padding(.top, 10.0)
+                            .navigationBarHidden(true)
                             
-                                Spacer()
-                                    .frame(width: 140)
+                            Spacer()
+                                .frame(width: 140)
                             NavigationLink(destination: SavedRecipesView(username: username).navigationBarBackButtonHidden(true), label: {
                                 VStack{
                                     Image("savedClosed")
@@ -117,13 +117,13 @@ struct HomeView: View {
                                         .padding(.top)
                                         .font(.custom("Futura", size: 16))
                                         .foregroundColor(.black)
-                            }
-                                           })
-                                    .padding(.top, 10.0)
-                                    .navigationBarHidden(true)
-                                    .navigationBarTitle("", displayMode: .inline)
+                                }
+                            })
+                            .padding(.top, 10.0)
+                            .navigationBarHidden(true)
+                            .navigationBarTitle("", displayMode: .inline)
                             Spacer()
-                            }
+                        }
                     }
                 }
             }
@@ -143,7 +143,7 @@ struct Section: View {
                 .font(.custom("Futura-Bold", size: 20))
                 .foregroundColor(Color(red: 0.333, green: 0.780, blue: 0.509))
                 .padding([.top, .leading], 10.0)
-                
+            
         }
         
         ScrollView(.horizontal){

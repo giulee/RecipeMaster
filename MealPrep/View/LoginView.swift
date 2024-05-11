@@ -18,7 +18,7 @@ struct LoginView: View {
         
         let setUsername = UserDefaults.standard.string(forKey: "newUserName")
         let setPassword = UserDefaults.standard.string(forKey: "newPassword")
-       
+        
         if setUsername == username && setPassword == password {
             return true
         }
@@ -82,33 +82,33 @@ struct LoginView: View {
                 
                 Spacer()
                 
-    
+                
                 if showError {
                     Text("Incorrect email or password.")
                         .foregroundColor(.red)
                 }
-                 
+                
                 NavigationLink(destination: HomeView(username: username) .navigationBarBackButtonHidden(true), label: {Text("Login")})
-                        .font(.custom("Futura-Bold", size: 24))
-                        .padding()
-                        .frame(width: 300.0)
-                        .frame(height: 70)
-                        .textFieldStyle(PlainTextFieldStyle())
-                        .padding([.horizontal], 4)
-                        .overlay(RoundedRectangle(cornerRadius: 100.0).stroke(Color.white))
-                        .foregroundColor(Color.white)
-                        .background(isValidLogin(username: username, password: password) || (username.isEmpty || password.isEmpty) ? Color(red: 0.333, green: 0.780, blue: 0.509) : Color.gray)
-                        .cornerRadius(100.0)
-                        .padding()
-                        .disabled(!isValidLogin(username: username, password: password))
-                        .onTapGesture {
-                            if !isValidLogin(username: username, password: password) {
-                                showError = true
-                            } else {
-                                showError = false
-                            }
+                    .font(.custom("Futura-Bold", size: 24))
+                    .padding()
+                    .frame(width: 300.0)
+                    .frame(height: 70)
+                    .textFieldStyle(PlainTextFieldStyle())
+                    .padding([.horizontal], 4)
+                    .overlay(RoundedRectangle(cornerRadius: 100.0).stroke(Color.white))
+                    .foregroundColor(Color.white)
+                    .background(isValidLogin(username: username, password: password) || (username.isEmpty || password.isEmpty) ? Color(red: 0.333, green: 0.780, blue: 0.509) : Color.gray)
+                    .cornerRadius(100.0)
+                    .padding()
+                    .disabled(!isValidLogin(username: username, password: password))
+                    .onTapGesture {
+                        if !isValidLogin(username: username, password: password) {
+                            showError = true
+                        } else {
+                            showError = false
                         }
-    
+                    }
+                
                 HStack {
                     Text("Don't have an account?")
                         .font(.custom("Futura-Regular", size: 20))
@@ -121,7 +121,7 @@ struct LoginView: View {
                 }
                 
             }
-        
+            
         }
         
     }
