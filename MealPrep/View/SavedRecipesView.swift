@@ -21,11 +21,7 @@ struct SavedRecipesView: View {
                             .font(.custom("Futura-Bold", size: 40))
                             .padding(.bottom)
                         
-                        SavedSection(recipes: modelData.recipes.prefix(2))
-                        
-                        SavedSection( recipes:modelData.recipes.prefix(8).dropFirst(4))
-                        
-                        SavedSection(recipes:modelData.recipes.prefix(12).dropFirst(8))
+                        SavedSection(recipes: modelData.recipes.filter { $0.isFavorite })
                     }
                     .padding(.bottom, 70)
                 }
@@ -82,24 +78,26 @@ struct SavedRecipesView: View {
 
 
 struct SavedSection: View {
+    var recipes: [RecipeModel.Recipe]
     
-    var recipes: ArraySlice<RecipeModel.Recipe>
+    let columns: [GridItem] = [
+        GridItem(.flexible(), spacing: 16),
+        GridItem(.flexible(), spacing: 16)
+    ]
     
     var body: some View {
-        
-        VStack{
-            
-            HStack( spacing: 10) {
-                ForEach(recipes, id: \.id) { recipe in
-                    NavigationLink(destination: RecipeDetail(recipe: recipe, modelData:ModelData())) {
-                        RecipeRow(recipe: recipe, modelData:ModelData())
-                            .foregroundColor(.black)
-                    }
+        LazyVGrid(columns: columns, spacing: 16) {
+            ForEach(recipes, id: \.id) { recipe in
+                NavigationLink(destination: RecipeDetail(recipe: recipe, modelData: ModelData())) {
+                    RecipeRow(recipe: recipe, modelData: ModelData())
+                        .foregroundColor(.black)
                 }
             }
         }
+        .padding(.horizontal)
     }
 }
+
 #Preview {
     SavedRecipesView(username: "", modelData: ModelData())
     
