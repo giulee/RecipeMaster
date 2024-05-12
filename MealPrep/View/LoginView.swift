@@ -6,14 +6,15 @@
 //
 
 import SwiftUI
-
+import Combine
 
 struct LoginView: View {
     
     @State private var username: String = ""
     @State private var password: String = ""
     @State private var showError: Bool = false
-    
+    @EnvironmentObject var modelData:ModelData
+
     func isValidLogin(username: String, password: String) -> Bool {
         
         let setUsername = UserDefaults.standard.string(forKey: "newUserName")
@@ -88,7 +89,7 @@ struct LoginView: View {
                         .foregroundColor(.red)
                 }
                 
-                NavigationLink(destination: HomeView(username: username, modelData: ModelData()) .navigationBarBackButtonHidden(true), label: {Text("Login")})
+                NavigationLink(destination: HomeView(username: username).environmentObject(ModelData()) .navigationBarBackButtonHidden(true), label: {Text("Login")})
                     .font(.custom("Futura-Bold", size: 24))
                     .padding()
                     .frame(width: 300.0)
@@ -114,7 +115,7 @@ struct LoginView: View {
                         .font(.custom("Futura-Regular", size: 20))
                         .foregroundColor(Color(red: 0.474, green: 0.498, blue: 0.623))
                         .padding(.bottom)
-                    NavigationLink(destination: SignUpView(modelData: ModelData()).navigationBarBackButtonHidden(true), label: {Text("Sign Up")})
+                    NavigationLink(destination: SignUpView().environmentObject(ModelData()).navigationBarBackButtonHidden(true), label: {Text("Sign Up")})
                         .font(.custom("Futura-Bold", size: 20))
                         .foregroundColor(Color(red: 0.333, green: 0.780, blue: 0.509))
                         .padding(.bottom)
@@ -128,5 +129,5 @@ struct LoginView: View {
 }
 
 #Preview {
-    LoginView()
+    LoginView().environmentObject(ModelData())
 }

@@ -6,15 +6,15 @@
 //
 
 import SwiftUI
+import Combine
 
 struct RecipeDetail: View {
     var recipe: RecipeModel.Recipe
-    @ObservedObject var modelData: ModelData
+    @EnvironmentObject var modelData: ModelData
     @State private var isFavorite:Bool
     
-    init(recipe: RecipeModel.Recipe, modelData: ModelData) {
+    init(recipe: RecipeModel.Recipe) {
         self.recipe = recipe
-        self.modelData = modelData
         self._isFavorite = State(initialValue: recipe.isFavorite)
     }
     
@@ -130,5 +130,5 @@ struct RecipeDetail: View {
 //}
 
 #Preview {
-    RecipeDetail(recipe: modelData.recipes[0], modelData:ModelData())
+    RecipeDetail(recipe: modelData.recipes[0]).environmentObject(ModelData())
 }

@@ -6,12 +6,12 @@
 //
 
 import SwiftUI
-
+import Combine
 
 struct SignUpView: View {
     @State private var newUsername: String = ""
     @State private var newPassword: String = ""
-    @ObservedObject var modelData:ModelData
+    @EnvironmentObject var modelData:ModelData
     
     var body: some View {
         NavigationView{
@@ -69,7 +69,7 @@ struct SignUpView: View {
                 
                 Spacer()
                 
-                NavigationLink(destination: HomeView(username: newUsername, modelData: ModelData()).navigationBarBackButtonHidden(true), label: {Text("Sign Up")})
+                NavigationLink(destination: HomeView(username: newUsername).environmentObject(ModelData()).navigationBarBackButtonHidden(true), label: {Text("Sign Up")})
                     .font(.custom("Futura-Bold", size: 24))
                     .padding()
                     .frame(width: 300.0)
@@ -86,7 +86,7 @@ struct SignUpView: View {
                         .font(.custom("Futura-Regular", size: 20))
                         .foregroundColor(Color(red: 0.474, green: 0.498, blue: 0.623))
                         .padding(.bottom)
-                    NavigationLink(destination: LoginView().navigationBarBackButtonHidden(true), label: {Text("Login")})
+                    NavigationLink(destination: LoginView().environmentObject(ModelData()).navigationBarBackButtonHidden(true), label: {Text("Login")})
                         .font(.custom("Futura-Bold", size: 20))
                         .foregroundColor(Color(red: 0.333, green: 0.780, blue: 0.509))
                         .padding(.bottom)
@@ -99,5 +99,5 @@ struct SignUpView: View {
 }
 
 #Preview {
-    SignUpView(modelData: ModelData())
+    SignUpView().environmentObject(ModelData())
 }

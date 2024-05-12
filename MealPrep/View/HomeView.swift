@@ -6,10 +6,11 @@
 //
 
 import SwiftUI
+import Combine
 
 struct HomeView: View {
     var username: String
-    @ObservedObject var modelData:ModelData
+    @EnvironmentObject var modelData:ModelData
     
     var body: some View {
         NavigationView {
@@ -20,7 +21,7 @@ struct HomeView: View {
                             .font(.custom("Futura-Bold", size: 40))
                             .padding([.top, .leading, .bottom])
                         HStack{
-                            NavigationLink(destination: HomeView(username: username, modelData: ModelData()).navigationBarBackButtonHidden(true), label: {Text("All")})
+                            NavigationLink(destination: HomeView(username: username).environmentObject(ModelData()).navigationBarBackButtonHidden(true), label: {Text("All")})
                                 .font(.custom("Futura-Bold", size: 16))
                                 .frame(width: 50.0)
                                 .frame(height: 45)
@@ -32,7 +33,7 @@ struct HomeView: View {
                                 .padding(.leading, 10.0)
                             
                             Spacer()
-                            NavigationLink(destination: VeganRecipeView(username: username, modelData: ModelData()).navigationBarBackButtonHidden(true), label: {Text("vegan")})
+                            NavigationLink(destination: VeganRecipeView(username: username).environmentObject(ModelData()).navigationBarBackButtonHidden(true), label: {Text("vegan")})
                                 .font(.custom("Futura-Bold", size: 16))
                                 .frame(width:80.0)
                                 .frame(height: 45)
@@ -44,7 +45,7 @@ struct HomeView: View {
                             
                             
                             Spacer()
-                            NavigationLink(destination: GlutenFreeView(username: username, modelData:ModelData()).navigationBarBackButtonHidden(true), label: {Text("gluten free")})
+                            NavigationLink(destination: GlutenFreeView(username: username).environmentObject(ModelData()).navigationBarBackButtonHidden(true), label: {Text("gluten free")})
                                 .font(.custom("Futura-Bold", size: 16))
                                 .frame(width: 120.0)
                                 .frame(height: 45)
@@ -55,7 +56,7 @@ struct HomeView: View {
                                 .cornerRadius(100.0)
                             
                             Spacer()
-                            NavigationLink(destination: VegetarianView(username: username, modelData:ModelData()).navigationBarBackButtonHidden(true), label: {Text("vegetarian")})
+                            NavigationLink(destination: VegetarianView(username: username).environmentObject(ModelData()).navigationBarBackButtonHidden(true), label: {Text("vegetarian")})
                                 .font(.custom("Futura-Bold", size: 16))
                                 .frame(width: 115.0)
                                 .frame(height: 45)
@@ -92,7 +93,7 @@ struct HomeView: View {
                         Spacer()
                         HStack{
                             Spacer()
-                            NavigationLink(destination: HomeView(username: username, modelData: ModelData()).navigationBarBackButtonHidden(true), label: {
+                            NavigationLink(destination: HomeView(username: username).environmentObject(ModelData()).navigationBarBackButtonHidden(true), label: {
                                 VStack {
                                     Image("homeOpen")
                                         .aspectRatio(contentMode: .fit)
@@ -109,7 +110,7 @@ struct HomeView: View {
                             
                             Spacer()
                                 .frame(width: 140)
-                            NavigationLink(destination: SavedRecipesView(username: username, modelData: ModelData()).navigationBarBackButtonHidden(true), label: {
+                            NavigationLink(destination: SavedRecipesView(username: username).environmentObject(ModelData()).navigationBarBackButtonHidden(true), label: {
                                 VStack{
                                     Image("savedClosed")
                                         .aspectRatio(contentMode: .fit)
@@ -151,7 +152,7 @@ struct Section: View {
         ScrollView(.horizontal){
             HStack( spacing: 10) {
                 ForEach(recipes, id: \.id) { recipe in
-                    NavigationLink(destination: RecipeDetail(recipe: recipe, modelData:ModelData())) {
+                    NavigationLink(destination: RecipeDetail(recipe: recipe)) {
                         RecipeRow(recipe: recipe, modelData:ModelData())
                             .foregroundColor(.black)
                             .padding(.leading, 10.0)
@@ -163,5 +164,5 @@ struct Section: View {
 }
 
 #Preview {
-    HomeView(username: "", modelData: ModelData())
+    HomeView(username: "").environmentObject(ModelData())
 }

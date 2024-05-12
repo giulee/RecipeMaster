@@ -6,10 +6,11 @@
 //
 
 import SwiftUI
+import Combine
 
 struct SavedRecipesView: View {
     var username: String
-    @ObservedObject var modelData: ModelData
+    @EnvironmentObject var modelData: ModelData
     
     var body: some View {
         NavigationView {
@@ -35,7 +36,7 @@ struct SavedRecipesView: View {
                         Spacer()
                         HStack{
                             Spacer()
-                            NavigationLink(destination: HomeView(username: username, modelData: ModelData()).navigationBarBackButtonHidden(true), label: {
+                            NavigationLink(destination: HomeView(username: username).environmentObject(ModelData()).navigationBarBackButtonHidden(true), label: {
                                 VStack {
                                     Image("homeClosed")
                                         .aspectRatio(contentMode: .fit)
@@ -52,7 +53,7 @@ struct SavedRecipesView: View {
                             
                             Spacer()
                                 .frame(width: 140)
-                            NavigationLink(destination: SavedRecipesView(username: username, modelData: ModelData()).navigationBarBackButtonHidden(true), label: {
+                            NavigationLink(destination: SavedRecipesView(username: username).environmentObject(ModelData()).navigationBarBackButtonHidden(true), label: {
                                 VStack{
                                     Image("savedOpen")
                                         .aspectRatio(contentMode: .fit)
@@ -88,7 +89,7 @@ struct SavedSection: View {
     var body: some View {
         LazyVGrid(columns: columns, spacing: 16) {
             ForEach(recipes, id: \.id) { recipe in
-                NavigationLink(destination: RecipeDetail(recipe: recipe, modelData: ModelData())) {
+                NavigationLink(destination: RecipeDetail(recipe: recipe)) {
                     RecipeRow(recipe: recipe, modelData: ModelData())
                         .foregroundColor(.black)
                 }
@@ -99,6 +100,6 @@ struct SavedSection: View {
 }
 
 #Preview {
-    SavedRecipesView(username: "", modelData: ModelData())
+    SavedRecipesView(username: "").environmentObject(ModelData())
     
 }
