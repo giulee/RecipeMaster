@@ -2,10 +2,12 @@
 <h2>Assignment 3</h2>
 
 <h3>Team (Full Name - GitHub account):</h3>
-- Jamie Vallo: @ovjamie
-- Michelle Tran: @michelletrnn
-- Guilietta Lee: @guilee 
-- YeonHee Park: @ellieyeonhee
+<ul>
+  <li>Jamie Vallo: @ovjamie</li>
+  <li>Michelle Tran: @michelletrnn</li>
+  <li>Guilietta Lee: @guilee</li>
+  <li>YeonHee Park: @ellieyeonhee</li>
+</ul> 
 
 <h3>Product: Recipe Master</h3>
 An iOS App developed to assist people with prepping their meals each week.
