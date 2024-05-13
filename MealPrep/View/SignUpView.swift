@@ -51,7 +51,7 @@ struct SignUpView: View {
                     }
                     .autocapitalization(.none)
                 
-                TextField("Create Password", text: $newPassword)
+                SecureField("Create Password", text: $newPassword)
                     .padding()
                     .font(.custom("Futura-Regular", size: 18))
                     .frame(width: 300.0)
